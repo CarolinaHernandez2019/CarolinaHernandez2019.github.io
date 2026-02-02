@@ -1,0 +1,840 @@
+/* ==========================================================
+   PORTAFOLIO - Carolina Hernandez
+   Archivo de estilos principal.
+
+   Para modificar colores, buscar la seccion "Variables CSS"
+   al inicio. Ahi se cambian los colores globales del sitio.
+   ========================================================== */
+
+/* --- Variables CSS: colores y fuentes del sitio --- */
+/* Cambiar estos valores modifica todo el sitio */
+:root {
+    --color-bg: #FFFDF8;
+    --color-surface: #FFFFFF;
+    --color-text: #3B3534;
+    --color-text-secondary: #7A6E6A;
+    --color-accent: #D4A0A7;
+    --color-border: #EDE6DF;
+    --color-tag-1: #F4C6CE;
+    --color-tag-2: #C2DEC8;
+    --color-tag-3: #C0D6E8;
+    --color-tag-4: #F0DFC8;
+    --color-tag-5: #D6C4E8;
+    --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --radius: 8px;
+    --max-width: 900px;
+    --transition: 0.3s ease;
+}
+
+/* --- Tema oscuro --- */
+/* Se activa con el boton de luna/sol en la barra de navegacion */
+[data-theme="dark"] {
+    --color-bg: #1E1C1B;
+    --color-surface: #2A2725;
+    --color-text: #E8E0DA;
+    --color-text-secondary: #A89E97;
+    --color-accent: #E0B3B9;
+    --color-border: #3D3835;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* --- Reset: estilos base para todos los elementos --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.7;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+/* --- Contenedor de secciones --- */
+.section-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ========== NAVEGACION ========== */
+/* Barra fija en la parte superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    transition: background var(--transition), box-shadow var(--transition);
+}
+
+/* Cuando se hace scroll, la barra gana sombra */
+.navbar.scrolled {
+    box-shadow: var(--shadow-md);
+}
+
+.nav-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.nav-logo {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: color var(--transition);
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--color-text);
+}
+
+/* Linea decorativa debajo del link activo */
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-accent);
+    border-radius: 1px;
+}
+
+/* --- Boton de tema claro/oscuro --- */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: color var(--transition), background var(--transition);
+}
+
+.theme-toggle:hover {
+    color: var(--color-accent);
+    background: var(--color-bg);
+}
+
+/* --- Boton hamburguesa para moviles --- */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.nav-toggle span {
+    width: 22px;
+    height: 2px;
+    background: var(--color-text);
+    border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition);
+}
+
+/* Animacion del boton hamburguesa cuando esta abierto */
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ========== HERO / PRESENTACION ========== */
+.hero {
+    padding: 120px 0 80px;
+}
+
+.hero-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+/* --- Hero centrado: cuando no hay foto, solo texto --- */
+.hero-centered {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-centered .hero-subtitle {
+    margin-bottom: 24px;
+}
+
+.hero-centered .hero-bio {
+    text-align: center;
+}
+
+/* --- Foto de perfil (usada en seccion Sobre mi) --- */
+.hero-image {
+    flex-shrink: 0;
+}
+
+.hero-image img,
+.image-placeholder {
+    width: 220px;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: var(--shadow-md);
+}
+
+/* Placeholder que se muestra mientras no haya foto */
+.image-placeholder {
+    background: linear-gradient(135deg, #F4C6CE 0%, #D6C4E8 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    gap: 8px;
+}
+
+.image-placeholder i {
+    font-size: 3rem;
+    opacity: 0.9;
+}
+
+.image-hint {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+/* --- Contenido del hero --- */
+.hero-location {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+}
+
+.hero-location i {
+    margin-right: 4px;
+    color: var(--color-accent);
+}
+
+.hero-name {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    color: var(--color-text);
+}
+
+.hero-title {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: 2px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--color-accent);
+    margin-bottom: 28px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 16px 0;
+}
+
+.hero-bio {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
+/* Link dentro de la bio (ej: enlace a LinkedIn) */
+.hero-bio a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--transition);
+}
+
+.hero-bio a:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+/* --- Iconos de redes sociales en el hero --- */
+.hero-links {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all var(--transition);
+}
+
+.hero-links a:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ========== SECCION DE SKILLS / EXPERTISE ========== */
+.skills {
+    padding: 24px 0 60px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+    color: var(--color-text);
+}
+
+.subsection-title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 40px 0 20px;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* --- Tags interactivos de expertise --- */
+/* Al hacer clic aparece la descripcion debajo */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: none;
+    background: var(--tag-color);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.skill-tag.active {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    outline: 2px solid var(--color-text);
+    outline-offset: 2px;
+}
+
+/* Descripciones que aparecen al hacer clic */
+.skill-descriptions {
+    margin-top: 20px;
+    min-height: 60px;
+}
+
+.skill-desc {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.skill-desc.active {
+    display: block;
+}
+
+.skill-desc p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    padding: 16px 20px;
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    border-left: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-sm);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Grid de herramientas tecnicas --- */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.tool-item:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.tool-item i {
+    font-size: 1.3rem;
+    color: var(--color-accent);
+}
+
+/* ========== PROYECTOS ========== */
+.projects {
+    padding: 60px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+/* --- Tarjeta de proyecto --- */
+.project-card {
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Imagen o placeholder del proyecto */
+.project-image {
+    height: 160px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Cada tarjeta tiene un degradado diferente */
+.project-card:nth-child(1) .project-placeholder {
+    background: linear-gradient(135deg, #F4C6CE, #D4A0A7);
+}
+.project-card:nth-child(2) .project-placeholder {
+    background: linear-gradient(135deg, #C2DEC8, #A3C9AB);
+}
+.project-card:nth-child(3) .project-placeholder {
+    background: linear-gradient(135deg, #D6C4E8, #BBA8D4);
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+.project-content p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 14px;
+}
+
+/* Tags dentro de cada tarjeta de proyecto */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.project-tags span {
+    padding: 4px 10px;
+    background: var(--color-bg);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+/* Fila con dos links: app en vivo + codigo */
+.project-links-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.project-link:hover {
+    gap: 10px;
+}
+
+/* Link principal (app en vivo) con fondo */
+.project-link.primary {
+    background: var(--color-accent);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 16px;
+    gap: 6px;
+}
+
+.project-link.primary:hover {
+    gap: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Imagen del proyecto clickeable */
+.project-image-link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.project-image-link .project-placeholder {
+    transition: opacity var(--transition);
+}
+
+.project-image-link:hover .project-placeholder {
+    opacity: 0.85;
+}
+
+/* Texto "Ver app en vivo" dentro del placeholder */
+.preview-hint {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+/* ========== SOBRE MI ========== */
+.about-me {
+    padding: 60px 0;
+}
+
+/* Tarjeta con foto a la izquierda y texto a la derecha */
+.about-card {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    padding: 32px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.about-image img,
+.about-image .image-placeholder {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: var(--shadow-sm);
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.about-name {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+
+.about-role {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: 4px;
+}
+
+.about-location {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+}
+
+.about-location i {
+    margin-right: 4px;
+    color: var(--color-accent);
+}
+
+.about-bio {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+}
+
+/* Link dentro de la bio de Sobre mi */
+.about-bio a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--transition);
+}
+
+.about-bio a:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+/* ========== CONTACTO ========== */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-text {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 32px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Boton principal de contacto */
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: #D6C4E8;
+    color: white;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Botones secundarios de contacto */
+.contact-btn.secondary {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.contact-btn.secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    padding: 24px 0;
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer p {
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+}
+
+/* ========== RESPONSIVE: MOVILES ========== */
+/* Ajustes para pantallas menores a 768px */
+@media (max-width: 768px) {
+    /* Navegacion en hamburguesa */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--color-surface);
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 12px;
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: var(--shadow-md);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Hero centrado */
+    .hero-name {
+        font-size: 2rem;
+    }
+
+    /* Sobre mi: foto arriba, texto abajo */
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image img,
+    .about-image .image-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-bio {
+        text-align: left;
+    }
+
+    .hero-links {
+        justify-content: center;
+    }
+
+    /* Skills: tags en 2 columnas */
+    .skill-tags {
+        justify-content: center;
+    }
+
+    .skill-tag {
+        font-size: 0.82rem;
+        padding: 8px 16px;
+    }
+
+    /* Proyectos: una columna */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Pantallas muy pequenas */
+@media (max-width: 480px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
