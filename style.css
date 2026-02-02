@@ -6,6 +6,19 @@
    al inicio. Ahi se cambian los colores globales del sitio.
    ========================================================== */
 
+/* --- Clase para ocultar visualmente pero mantener accesible para buscadores y lectores de pantalla --- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* --- Variables CSS: colores y fuentes del sitio --- */
 /* Cambiar estos valores modifica todo el sitio */
 :root {
