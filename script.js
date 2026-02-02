@@ -123,6 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Cambio de idioma (espanol / ingles) ---
     // Se guarda la preferencia en localStorage para que persista entre visitas
     const langToggle = document.getElementById('langToggle');
+
+    // Limpieza unica: si el valor guardado era del default anterior, se borra para usar el nuevo default (ingles)
+    if (!localStorage.getItem('lang_v2')) {
+        localStorage.removeItem('lang');
+        localStorage.setItem('lang_v2', 'migrado');
+    }
+
     let idiomaActual = localStorage.getItem('lang') || 'en';
 
     // Se aplica el idioma guardado al cargar la pagina
