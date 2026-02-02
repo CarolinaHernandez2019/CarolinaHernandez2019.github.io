@@ -48,6 +48,15 @@ Si se cambia el nombre o el concepto del sitio, se debe actualizar este `<h1>` p
 - **Agregar un proyecto**: copiar uno de los bloques `<article class="project-card">` en `index.html` y cambiar título, descripción, tags, imagen y links.
 - **Agregar una herramienta**: copiar un bloque `<div class="tool-item">` y cambiar el ícono y nombre.
 
+## Si no se ven los cambios en el navegador
+
+Después de editar archivos HTML o CSS, el navegador puede mostrar la versión anterior por caché. Para forzar la recarga:
+
+- **Windows/Linux**: `Ctrl + Shift + R`
+- **Mac**: `Cmd + Shift + R`
+
+Esto obliga al navegador a descargar los archivos de nuevo en lugar de usar la copia guardada.
+
 ## Respaldo
 
 El archivo `index_v1.html` es una copia de la versión original antes de los cambios de febrero 2026. Sirve como referencia si se necesita volver atrás.
