@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosas de Datos | Jenny Carolina Hernández Cardozo</title>
+    <meta name="description" content="Laboratorio de ideas, repositorio de información, análisis y curiosidades de todo tipo alrededor de los datos.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de Font Awesome para redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Fuente: Montserrat para todo el sitio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== NAVEGACION ========== -->
+    <!-- Barra superior fija con links a cada seccion -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Cosas de Datos</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#skills">Temas</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <!-- Boton para cambiar entre tema claro y oscuro -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO / PRESENTACION ========== -->
+    <!-- Seccion principal: el concepto "Cosas de Datos" es lo primero -->
+    <section class="hero" id="inicio">
+        <div class="hero-container hero-centered">
+            <div class="hero-content">
+                <h1 class="hero-name">Cosas de Datos</h1>
+                <p class="hero-subtitle">Laboratorio de ideas, repositorio de información, análisis y curiosidades de todo tipo alrededor de los datos</p>
+                <p class="hero-bio">
+                    Cuando me preguntan a qué me dedico, siempre respondo: ...cosas de datos.
+                    Este sitio es justamente eso: un espacio para explorar y recopilar
+                    aprendizajes sobre datos. Si tienes preguntas, ideas o propuestas,
+                    no dudes en escribirme. Estoy aquí para explorar, aprender y colaborar
+                    en torno a "cosas de datos" y temas sociales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERTISE / HABILIDADES ========== -->
+    <!-- Tags interactivos: al hacer clic se muestra la descripcion -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Temas</h2>
+            <div class="skill-tags">
+                <button class="skill-tag" data-skill="policy" style="--tag-color: #D6C4E8;">
+                    Política social y evaluación de impacto
+                </button>
+                <button class="skill-tag" data-skill="demographics" style="--tag-color: #D6C4E8;">
+                    Demografía y análisis poblacional
+                </button>
+                <button class="skill-tag" data-skill="data-viz" style="--tag-color: #D6C4E8;">
+                    Visualización de datos
+                </button>
+                <button class="skill-tag" data-skill="monitoring" style="--tag-color: #D6C4E8;">
+                    Diseño de sistemas de monitoreo
+                </button>
+                <button class="skill-tag" data-skill="education" style="--tag-color: #D6C4E8;">
+                    Educación y políticas de juventud
+                </button>
+            </div>
+            <!-- Descripciones que aparecen al hacer clic en cada tag -->
+            <div class="skill-descriptions">
+                <div class="skill-desc" id="desc-policy">
+                    <p>Diseño e implementación de evaluaciones de impacto para programas sociales
+                    en América Latina. Experiencia evaluando la efectividad de políticas públicas
+                    en colaboración con instituciones gubernamentales y organizaciones internacionales
+                    como el BID.</p>
+                </div>
+                <div class="skill-desc" id="desc-demographics">
+                    <p>Proyecciones de población, análisis demográfico y procesamiento de datos censales.
+                    Experiencia con datos del DANE y modelamiento demográfico regional para la
+                    planificación de políticas en instituciones colombianas.</p>
+                </div>
+                <div class="skill-desc" id="desc-data-viz">
+                    <p>Transformación de conjuntos de datos complejos en visualizaciones claras y accesibles,
+                    tanto para audiencias técnicas como no técnicas. Creación de tableros y reportes
+                    con Power BI, Python (matplotlib, seaborn) y R (ggplot2).</p>
+                </div>
+                <div class="skill-desc" id="desc-monitoring">
+                    <p>Diseño de sistemas de monitoreo basados en datos para programas sociales,
+                    permitiendo el seguimiento en tiempo real de indicadores y la toma de decisiones
+                    basada en evidencia en instituciones públicas.</p>
+                </div>
+                <div class="skill-desc" id="desc-education">
+                    <p>Conocimiento especializado en política educativa y programas de desarrollo juvenil.
+                    Análisis de datos enfocado en acceso educativo, métricas de calidad y resultados
+                    de programas en diversos contextos latinoamericanos.</p>
+                </div>
+            </div>
+
+            <!-- Herramientas tecnicas -->
+            <h3 class="subsection-title">Herramientas</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-r-project"></i>
+                    <span>R</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Stata</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROYECTOS ========== -->
+    <!-- Tarjetas con proyectos destacados -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+
+                <!-- Proyecto 1: Tablero Jovenes con Oportunidades -->
+                <article class="project-card">
+                    <div class="project-image project-image-link">
+                        <a href="https://tablero-jco-fmeyctbuhogjs5tgttm2iw.streamlit.app/" target="_blank" rel="noopener">
+                            <img src="tablero-jco-preview.png" alt="Preview del tablero Jóvenes con Oportunidades">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tablero Jóvenes con Oportunidades</h3>
+                        <p>Tablero interactivo para explorar la priorización de UPZ en Bogotá
+                        según datos de población joven vulnerable del programa "Jóvenes con
+                        Oportunidades" de la SDIS. Incluye mapas, rankings dinámicos por grupos
+                        SISBEN y análisis comparativo por localidad.</p>
+                        <div class="project-tags">
+                            <span>Streamlit</span>
+                            <span>Python</span>
+                            <span>SDIS</span>
+                            <span>Juventud</span>
+                        </div>
+                        <div class="project-links-row">
+                            <a href="https://tablero-jco-fmeyctbuhogjs5tgttm2iw.streamlit.app/"
+                               target="_blank" rel="noopener" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i> Ver app
+                            </a>
+                            <a href="https://github.com/CarolinaHernandez2019/tablero-jco"
+                               target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2: Monitoreo de noticias de juventud -->
+                <article class="project-card">
+                    <div class="project-image project-image-link">
+                        <a href="https://noticiasjuventudcolombia.streamlit.app/" target="_blank" rel="noopener">
+                            <img src="monitor-noticias-preview.png" alt="Preview del monitoreo de noticias de juventud">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Monitoreo de noticias de juventud</h3>
+                        <p>Sistema automatizado de scraping y monitoreo de noticias relacionadas
+                        con juventud. Recopila artículos de prensa, los procesa y los presenta
+                        en un tablero para seguimiento temático.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scraping</span>
+                            <span>Dashboard</span>
+                            <span>Juventud</span>
+                        </div>
+                        <div class="project-links-row">
+                            <a href="https://noticiasjuventudcolombia.streamlit.app/"
+                               target="_blank" rel="noopener" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i> Ver app
+                            </a>
+                            <a href="https://github.com/CarolinaHernandez2019/-monitoreo-noticias-juventud"
+                               target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE MI / PERFIL DE JENNY ========== -->
+    <!-- Seccion con foto, nombre, bio profesional y redes -->
+    <section class="about-me" id="about">
+        <div class="section-container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Jenny Carolina Hernández Cardozo">
+                </div>
+                <div class="about-content">
+                    <h3 class="about-name">Jenny Carolina Hernández Cardozo</h3>
+                    <p class="about-role">Economista &amp; Demógrafa</p>
+                    <p class="about-location"><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+                    <p class="about-bio">
+                        Economista y demógrafa con más de 12 años de experiencia en análisis de datos
+                        y evaluación de políticas en instituciones públicas colombianas y organizaciones
+                        internacionales como el BID. Su trabajo se enfoca en datos sociales, especialmente
+                        en políticas de educación y juventud, donde ha diseñado sistemas de monitoreo y
+                        trabajado en evaluaciones de impacto en América Latina.
+                        Para una visión más detallada de su experiencia profesional, visita su
+                        <a href="https://www.linkedin.com/in/carolinahernandezcardozobogota/" target="_blank" rel="noopener">perfil de LinkedIn</a>.
+                    </p>
+                    <div class="hero-links">
+                        <a href="https://github.com/CarolinaHernandez2019" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/carolinahernandezcardozobogota/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:carolina.hernandez.car@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contact-text">
+                Si tienes preguntas, ideas o propuestas, no dudes en escribirme.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:carolina.hernandez.car@gmail.com" class="contact-btn">
+                    <i class="fas fa-envelope"></i> Escríbeme
+                </a>
+                <a href="https://github.com/CarolinaHernandez2019" target="_blank" rel="noopener" class="contact-btn secondary">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/carolinahernandezcardozobogota/" target="_blank" rel="noopener" class="contact-btn secondary">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2025 Jenny Carolina Hernández Cardozo &middot; Cosas de Datos</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
