@@ -155,6 +155,28 @@ body {
     border-radius: 1px;
 }
 
+/* --- Boton de cambio de idioma (ES/EN) --- */
+/* Se muestra junto al boton de tema en la barra de navegacion */
+.lang-toggle {
+    background: none;
+    border: 1.5px solid var(--color-border);
+    color: var(--color-text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 14px;
+    letter-spacing: 0.05em;
+    transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.lang-toggle:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    background: var(--color-bg);
+}
+
 /* --- Boton de tema claro/oscuro --- */
 .theme-toggle {
     background: none;

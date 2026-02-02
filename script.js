@@ -119,4 +119,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     sections.forEach(section => observer.observe(section));
+
+    // --- Cambio de idioma (espanol / ingles) ---
+    // Se guarda la preferencia en localStorage para que persista entre visitas
+    const langToggle = document.getElementById('langToggle');
+    let idiomaActual = localStorage.getItem('lang') || 'es';
+
+    // Se aplica el idioma guardado al cargar la pagina
+    aplicarIdioma(idiomaActual);
+
+    langToggle.addEventListener('click', () => {
+        // Alterna entre espanol e ingles
+        idiomaActual = idiomaActual === 'es' ? 'en' : 'es';
+        localStorage.setItem('lang', idiomaActual);
+        aplicarIdioma(idiomaActual);
+    });
+
+    // Recorre todos los elementos con data-i18n y reemplaza su texto
+    function aplicarIdioma(lang) {
+        // Actualiza el boton para mostrar el idioma al que se puede cambiar
+        langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
+
+        // Cambia el atributo lang del HTML (importante para accesibilidad y SEO)
+        document.documentElement.lang = lang;
+
+        // Recorre cada elemento marcado con data-i18n
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const clave = el.getAttribute('data-i18n');
+            if (traducciones[clave] && traducciones[clave][lang]) {
+                el.textContent = traducciones[clave][lang];
+            }
+        });
+
+        // Actualiza el titulo de la pagina (pestaña del navegador)
+        if (traducciones['page-title'] && traducciones['page-title'][lang]) {
+            document.title = traducciones['page-title'][lang];
+        }
+
+        // Actualiza la meta description (para SEO)
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && traducciones['meta-description'] && traducciones['meta-description'][lang]) {
+            metaDesc.setAttribute('content', traducciones['meta-description'][lang]);
+        }
+    }
 });
