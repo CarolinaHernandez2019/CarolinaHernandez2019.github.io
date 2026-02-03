@@ -138,6 +138,12 @@ const traducciones = {
         en: "Code"
     },
 
+    // --- Tags de proyecto ---
+    "tag-youth": {
+        es: "Juventud",
+        en: "Youth"
+    },
+
     // --- Sobre mi ---
     "section-sobre": {
         es: "Sobre mí",
