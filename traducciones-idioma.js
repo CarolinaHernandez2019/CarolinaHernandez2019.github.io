@@ -42,8 +42,8 @@ const traducciones = {
         en: "Carolina Hernández · Data Stuff"
     },
     "hero-subtitle": {
-        es: "Laboratorio de ideas, repositorio de información...",
-        en: "Ideas lab, information repository..."
+        es: "Portafolio, laboratorio de ideas, repositorio de información",
+        en: "Portfolio, ideas lab, information repository"
     },
     "hero-bio": {
         es: "Cuando me preguntan a qué me dedico, siempre respondo: cosas de datos. Este sitio es justamente eso: un espacio para explorar y recopilar aprendizajes sobre datos.",
