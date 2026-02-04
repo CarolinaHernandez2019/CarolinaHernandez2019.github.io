@@ -116,8 +116,8 @@ const traducciones = {
         en: "Prioritization dashboard for youth programs in Bogotá"
     },
     "project1-desc": {
-        es: "Tablero interactivo para explorar la priorización de programas sociales en Bogotá según datos de población joven vulnerable de la ciudad, en este caso con datos del SISBEN 2024. Este tablero incluye mapas, rankings dinámicos por grupos SISBEN y análisis comparativo por localidad.",
-        en: "Interactive dashboard to explore the prioritization of social programs in Bogotá based on the city's vulnerable youth population data, using SISBEN 2024 data. This dashboard includes maps, dynamic rankings by SISBEN groups, and comparative analysis by locality."
+        es: "Desarrollado para apoyar la asignación de programas sociales de la Secretaría Distrital de Integración Social. Permite identificar localidades con mayor concentración de jóvenes vulnerables según SISBEN 2024 y comparar necesidades entre territorios.",
+        en: "Developed to support social program allocation at the District Secretariat of Social Integration. Identifies localities with the highest concentration of vulnerable youth based on SISBEN 2024 data and compares needs across territories."
     },
     "project1-link-app": {
         es: "Ver app",
@@ -132,8 +132,8 @@ const traducciones = {
         en: "Youth news monitoring"
     },
     "project2-desc": {
-        es: "Sistema automatizado de scraping y monitoreo de noticias relacionadas con juventud. Recopila artículos de prensa, los procesa y los presenta en un tablero para seguimiento temático.",
-        en: "Automated scraping and monitoring system for youth-related news. Collects press articles, processes them, and presents them on a dashboard for topic tracking."
+        es: "Herramienta para rastrear cómo se habla de juventud en medios colombianos. Automatiza la recolección diaria de noticias, categoriza menciones por temas y genera visualizaciones para identificar tendencias en la cobertura mediática.",
+        en: "Tool for tracking how youth is covered in Colombian media. Automates daily news collection, categorizes mentions by topic, and generates visualizations to identify trends in media coverage."
     },
     "project2-link-app": {
         es: "Ver app",
