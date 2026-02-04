@@ -100,10 +100,16 @@ const traducciones = {
         en: "Tools"
     },
 
+    // --- Navegacion: Publicaciones ---
+    "nav-publicaciones": {
+        es: "Publicaciones",
+        en: "Publications"
+    },
+
     // --- Proyectos ---
     "section-proyectos": {
-        es: "Proyectos",
-        en: "Projects"
+        es: "Proyectos recientes",
+        en: "Recent projects"
     },
     "project1-title": {
         es: "Tablero de priorización para programas de juventud en Bogotá",
@@ -144,14 +150,41 @@ const traducciones = {
         en: "Youth"
     },
 
+    // --- Publicaciones ---
+    "section-publicaciones": {
+        es: "Publicaciones",
+        en: "Publications"
+    },
+    "pub1-title": {
+        es: "Educación en la región Amazónica",
+        en: "Education in the Amazon region"
+    },
+    "pub2-title": {
+        es: "Multiplicar aprendizajes: tutorías a distancia para potenciar la escuela",
+        en: "Multiplying learning: remote tutoring to enhance schooling"
+    },
+    "pub3-title": {
+        es: "¿Cómo reconstruir la educación postpandemia?",
+        en: "How to reboot education post-pandemic"
+    },
+    "pub-scholar-link": {
+        es: "Ver todas las publicaciones en Google Scholar",
+        en: "See all publications on Google Scholar"
+    },
+
     // --- Sobre mi ---
     "section-sobre": {
         es: "Sobre mí",
         en: "About me"
     },
     "about-bio": {
-        es: "Economista y demógrafa, pero aprendiz constante: automatización, visualización de datos e IA responsable. Tengo +10 años en análisis, investigación y evaluación de políticas sociales con instituciones públicas colombianas y organizaciones como el BID en América Latina. Mi trabajo: sistemas de monitoreo, evaluación de impacto en educación y juventud, machine learning para encuestas de hogares, convirtiendo datos complejos en información útil para decisiones de política pública.",
-        en: "Economist and demographer, but a constant learner: automation, data visualization, and responsible AI. I have 10+ years in analysis, research, and evaluation of social policies with Colombian public institutions and organizations like the IDB in Latin America. My work: monitoring systems, impact evaluation in education and youth, machine learning for household surveys, turning complex data into useful information for public policy decisions."
+        es: "Estudié economía y tengo una maestría en demografía, pero me considero una eterna aprendiza de muchas cosas, entre ellas: automatización, visualización de datos e IA responsable. Tengo +10 años en análisis, investigación y evaluación de políticas sociales con instituciones públicas colombianas y organizaciones como el BID en América Latina. Mi trabajo: sistemas de monitoreo, evaluación de impacto en educación y juventud, machine learning para encuestas de hogares, convirtiendo datos complejos en información útil para decisiones de política pública.",
+        en: "I studied economics and have a master's degree in demography, but I consider myself an eternal learner of many things, among them: automation, data visualization, and responsible AI. I have 10+ years in analysis, research, and evaluation of social policies with Colombian public institutions and organizations like the IDB in Latin America. My work: monitoring systems, impact evaluation in education and youth, machine learning for household surveys, turning complex data into useful information for public policy decisions."
+    },
+
+    "about-cv-btn": {
+        es: "Descargar CV",
+        en: "Download CV"
     },
 
     // --- Contacto ---

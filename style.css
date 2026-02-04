@@ -652,6 +652,110 @@ body {
     opacity: 0.9;
 }
 
+/* ========== PUBLICACIONES ========== */
+/* Seccion con publicaciones seleccionadas como tarjetas clickeables */
+.publications {
+    padding: 60px 0;
+}
+
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Cada tarjeta es un enlace clickeable a la publicacion */
+.publication-card {
+    background: var(--color-surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    color: inherit;
+}
+
+.publication-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Imagen de portada de la publicacion */
+.publication-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.publication-card:hover .publication-image img {
+    transform: scale(1.03);
+}
+
+.publication-info {
+    padding: 16px;
+}
+
+.publication-info h3 {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--color-text);
+}
+
+/* Organizacion y año de la publicacion */
+.publication-meta {
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+}
+
+/* Link a Google Scholar debajo de las tarjetas */
+.publications-more {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.publications-more a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: all var(--transition);
+}
+
+.publications-more a:hover {
+    opacity: 0.8;
+}
+
+/* --- Boton de descarga de CV --- */
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+    margin-top: 16px;
+}
+
+.cv-download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 /* ========== SOBRE MI ========== */
 .about-me {
     padding: 60px 0;
@@ -859,6 +963,11 @@ body {
 
     /* Proyectos: una columna */
     .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Publicaciones: una columna en movil */
+    .publications-grid {
         grid-template-columns: 1fr;
     }
 
