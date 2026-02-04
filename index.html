@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n-attr="page-title">Data Stuff | Jenny Carolina Hernández Cardozo</title>
     <meta name="description" content="Ideas lab, information repository..." data-i18n-meta="meta-description">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <!-- Iconos de Font Awesome para redes sociales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Fuente: Montserrat para todo el sitio -->
@@ -29,6 +29,7 @@
                 <li><a href="#inicio" data-i18n="nav-inicio">Home</a></li>
                 <li><a href="#skills" data-i18n="nav-temas">Topics</a></li>
                 <li><a href="#projects" data-i18n="nav-proyectos">Projects</a></li>
+                <li><a href="#publications" data-i18n="nav-publicaciones">Publications</a></li>
                 <li><a href="#about" data-i18n="nav-sobre">About</a></li>
                 <li><a href="#contact" data-i18n="nav-contacto">Contact</a></li>
             </ul>
@@ -154,7 +155,7 @@
     <!-- Tarjetas con proyectos destacados -->
     <section class="projects" id="projects">
         <div class="section-container">
-            <h2 class="section-title" data-i18n="section-proyectos">Projects</h2>
+            <h2 class="section-title" data-i18n="section-proyectos">Recent projects</h2>
             <div class="projects-grid">
 
                 <!-- Proyecto 1: Tablero Jovenes con Oportunidades -->
@@ -224,6 +225,55 @@
         </div>
     </section>
 
+    <!-- ========== PUBLICACIONES ========== -->
+    <!-- Publicaciones seleccionadas con imagen de portada -->
+    <section class="publications" id="publications">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="section-publicaciones">Publications</h2>
+            <div class="publications-grid">
+
+                <!-- Publicacion 1: Educacion en la region Amazonica -->
+                <a href="http://dx.doi.org/10.18235/0012989" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/Educación en la región Amazónica.png" alt="Educación en la región Amazónica">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub1-title">Education in the Amazon region</h3>
+                        <p class="publication-meta">BID · 2024</p>
+                    </div>
+                </a>
+
+                <!-- Publicacion 2: Multiplicar aprendizajes -->
+                <a href="http://dx.doi.org/10.18235/0005309" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/Multiplicar aprendizajes tutorías a distancia para potenciar la escuela.png" alt="Multiplicar aprendizajes: tutorías a distancia para potenciar la escuela">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub2-title">Multiplying learning: remote tutoring to enhance schooling</h3>
+                        <p class="publication-meta">BID · 2023</p>
+                    </div>
+                </a>
+
+                <!-- Publicacion 3: Como reconstruir la educacion postpandemia -->
+                <a href="http://dx.doi.org/10.18235/0004241" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/¿Cómo reconstruir la educación postpandemia.png" alt="¿Cómo reconstruir la educación postpandemia?">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub3-title">How to reboot education post-pandemic</h3>
+                        <p class="publication-meta">BID · 2022</p>
+                    </div>
+                </a>
+
+            </div>
+            <p class="publications-more">
+                <a href="https://scholar.google.com/citations?user=z-auRmUAAAAJ&hl=es" target="_blank" rel="noopener">
+                    <span data-i18n="pub-scholar-link">See all publications on Google Scholar</span> →
+                </a>
+            </p>
+        </div>
+    </section>
+
     <!-- ========== SOBRE MI / PERFIL DE JENNY ========== -->
     <!-- Seccion con foto, nombre, bio profesional y redes -->
     <section class="about-me" id="about">
@@ -237,8 +287,9 @@
                     <h3 class="about-name">Jenny Carolina Hernández Cardozo</h3>
                     <p class="about-location"><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
                     <p class="about-bio" data-i18n="about-bio">
-                        Economist and demographer, but a constant learner: automation, data visualization,
-                        and responsible AI. I have 10+ years in analysis, research, and evaluation of social
+                        I studied economics and have a master's degree in demography, but I consider myself
+                        an eternal learner of many things, among them: automation, data visualization, and
+                        responsible AI. I have 10+ years in analysis, research, and evaluation of social
                         policies with Colombian public institutions and organizations like the IDB in Latin
                         America. My work: monitoring systems, impact evaluation in education and youth,
                         machine learning for household surveys, turning complex data into useful information
@@ -258,6 +309,9 @@
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
+                    <a href="Hernandez_Cardozo_CV_2026.pdf" download class="cv-download-btn">
+                        <i class="fas fa-download"></i> <span data-i18n="about-cv-btn">Download CV</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -291,7 +345,7 @@
         </div>
     </footer>
 
-    <script src="traducciones-idioma.js?v=2"></script>
+    <script src="traducciones-idioma.js?v=3"></script>
     <script src="script.js?v=3"></script>
 </body>
 </html>
