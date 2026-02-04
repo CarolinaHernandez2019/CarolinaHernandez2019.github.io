@@ -178,7 +178,7 @@ const traducciones = {
         en: "About me"
     },
     "about-bio": {
-        es: "Estudié economía y tengo una maestría en demografía, pero me considero una eterna aprendiza de muchas cosas, entre ellas: automatización, visualización de datos e IA responsable. Tengo +8 años de experiencia en análisis de datos con instituciones públicas colombianas y organizaciones como el BID en América Latina. Mi trabajo: sistemas de monitoreo, evaluación de impacto en educación y juventud, machine learning para encuestas de hogares, convirtiendo datos complejos en información útil para decisiones de política pública.",
+        es: "Estudié economía y tengo una maestría en demografía, pero me considero una eterna aprendiz de muchas cosas, entre ellas: automatización, visualización de datos e IA responsable. Tengo +8 años de experiencia en análisis de datos con instituciones públicas colombianas y organizaciones como el BID en América Latina. Mi trabajo: sistemas de monitoreo, evaluación de impacto en educación y juventud, machine learning para encuestas de hogares, convirtiendo datos complejos en información útil para decisiones de política pública.",
         en: "I studied economics and have a master's degree in demography, but I consider myself an eternal learner of many things, among them: automation, data visualization, and responsible AI. I have 8+ years of experience in data analysis with Colombian public institutions and organizations like the IDB in Latin America. My work: monitoring systems, impact evaluation in education and youth, machine learning for household surveys, turning complex data into useful information for public policy decisions."
     },
 
