@@ -197,8 +197,8 @@ const traducciones = {
         en: "If you have questions, ideas, or proposals, here's how to reach me."
     },
     "contact-btn-email": {
-        es: "Escríbeme",
-        en: "Email me"
+        es: "Correo",
+        en: "Email"
     },
 
     // --- Footer ---
