@@ -56,44 +56,44 @@ const traducciones = {
         en: "Topics"
     },
     "skill-policy": {
-        es: "Política social y evaluación de impacto",
-        en: "Social policy and impact evaluation"
+        es: "Análisis de datos sociales",
+        en: "Social data analysis"
     },
     "skill-demographics": {
-        es: "Demografía y análisis poblacional",
-        en: "Demographics and population analysis"
+        es: "Análisis poblacional",
+        en: "Population analysis"
     },
     "skill-dataviz": {
         es: "Visualización de datos",
         en: "Data visualization"
     },
     "skill-monitoring": {
-        es: "Diseño de sistemas de monitoreo",
-        en: "Monitoring systems design"
+        es: "Evaluación de políticas públicas",
+        en: "Public policy evaluation"
     },
     "skill-education": {
-        es: "Educación y políticas de juventud",
-        en: "Education and youth policies"
+        es: "Juventud y educación",
+        en: "Youth and education"
     },
     "desc-policy": {
-        es: "Diseño e implementación de evaluaciones de impacto para programas sociales en América Latina. Experiencia evaluando la efectividad de políticas públicas en colaboración con instituciones gubernamentales y organizaciones internacionales como el BID.",
-        en: "Design and implementation of impact evaluations for social programs in Latin America. Experience evaluating public policy effectiveness in collaboration with government institutions and international organizations such as the IDB."
+        es: "Experiencia en investigación sobre mercado laboral, juventud, educación y migración. Trabajo con encuestas de hogares de Colombia y América Latina.",
+        en: "Research experience in labor markets, youth, education, and migration. Working with household surveys from Colombia and Latin America."
     },
     "desc-demographics": {
-        es: "Proyecciones de población, análisis demográfico y procesamiento de datos censales. Experiencia con datos del DANE y modelamiento demográfico regional para la planificación de políticas en instituciones colombianas.",
-        en: "Population projections, demographic analysis, and census data processing. Experience with DANE data and regional demographic modeling for policy planning in Colombian institutions."
+        es: "Desde 2013 trabajando en temas poblacionales, comenzando como asistente de investigación. Formación formal con maestría en demografía en El Colegio de México.",
+        en: "Working on population topics since 2013, starting as a research assistant. Formal training with a master's degree in demography from El Colegio de México."
     },
     "desc-dataviz": {
-        es: "Transformación de conjuntos de datos complejos en visualizaciones claras y accesibles, tanto para audiencias técnicas como no técnicas. Creación de tableros y reportes con Power BI, Python (matplotlib, seaborn) y R (ggplot2).",
-        en: "Transforming complex datasets into clear and accessible visualizations for both technical and non-technical audiences. Building dashboards and reports with Power BI, Python (matplotlib, seaborn), and R (ggplot2)."
+        es: "Para públicos técnicos y no técnicos. Visualizaciones listas para publicación en ggplot2 y Plotly. Actualmente estudiando D3.js para crear visualizaciones web interactivas.",
+        en: "For technical and non-technical audiences. Publication-ready visualizations in ggplot2 and Plotly. Currently studying D3.js to create interactive web visualizations."
     },
     "desc-monitoring": {
-        es: "Diseño de sistemas de monitoreo basados en datos para programas sociales, permitiendo el seguimiento en tiempo real de indicadores y la toma de decisiones basada en evidencia en instituciones públicas.",
-        en: "Design of data-driven monitoring systems for social programs, enabling real-time indicator tracking and evidence-based decision-making in public institutions."
+        es: "Experiencia en evaluación de políticas de juventud y educación a través de mi trabajo con el BID y la Secretaría Distrital de Integración Social de Bogotá.",
+        en: "Experience in youth and education policy evaluation through my work with the IDB and the District Secretariat of Social Integration in Bogotá."
     },
     "desc-education": {
-        es: "Conocimiento especializado en política educativa y programas de desarrollo juvenil. Análisis de datos enfocado en acceso educativo, métricas de calidad y resultados de programas en diversos contextos latinoamericanos.",
-        en: "Specialized knowledge in education policy and youth development programs. Data analysis focused on educational access, quality metrics, and program outcomes across diverse Latin American contexts."
+        es: "Más de 8 años especializándome en análisis y evaluación de políticas dirigidas a población joven, con énfasis en educación, empleo y participación.",
+        en: "Over 8 years specializing in analysis and evaluation of policies targeting young populations, with emphasis on education, employment, and participation."
     },
     "subsection-herramientas": {
         es: "Herramientas",
