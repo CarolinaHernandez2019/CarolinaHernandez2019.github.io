@@ -660,8 +660,8 @@ body {
 
 .publications-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
 }
 
 /* Cada tarjeta es un enlace clickeable a la publicacion */
@@ -683,7 +683,7 @@ body {
 
 /* Imagen de portada de la publicacion */
 .publication-image {
-    height: 200px;
+    height: 150px;
     overflow: hidden;
 }
 
@@ -699,12 +699,12 @@ body {
 }
 
 .publication-info {
-    padding: 16px;
+    padding: 12px;
 }
 
 .publication-info h3 {
     font-family: var(--font-heading);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 4px;
     color: var(--color-text);
