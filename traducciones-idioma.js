@@ -171,6 +171,10 @@ const traducciones = {
         es: "¿Cómo reconstruir la educación postpandemia?",
         en: "How to reboot education post-pandemic"
     },
+    "pub4-title": {
+        es: "Estudiantes desvinculados: los costos reales de la pandemia",
+        en: "Disconnected students: the real costs of the pandemic"
+    },
     "pub-scholar-link": {
         es: "Ver todas las publicaciones en Google Scholar",
         en: "See all publications on Google Scholar"
