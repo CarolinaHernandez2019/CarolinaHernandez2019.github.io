@@ -155,6 +155,10 @@ const traducciones = {
         es: "Publicaciones",
         en: "Publications"
     },
+    "pub0-title": {
+        es: "Evaluación de operaciones de la política distrital de juventud de Bogotá",
+        en: "Operations evaluation of Bogotá's district youth policy"
+    },
     "pub1-title": {
         es: "Educación en la región Amazónica",
         en: "Education in the Amazon region"
