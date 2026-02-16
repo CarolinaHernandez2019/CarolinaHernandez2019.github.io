@@ -1,0 +1,9 @@
+# Archivos personales que no deben publicarse
+Hernandez_Cardozo_CV_2026.pdf
+
+# Copias versionadas (respaldos locales, no se publican)
+*_v[0-9].*
+*_v[0-9][0-9].*
+
+# Guias y documentos internos
+guia-*.docx
