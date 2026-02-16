@@ -190,11 +190,6 @@ const traducciones = {
         en: "I have 8+ years of experience in social data analysis with Colombian public institutions and organizations like the IDB. My focus: monitoring systems, impact evaluation in education and youth, and turning household survey data into information for public policy. I studied economics and demography, but much of what I know comes from continuous self-learning."
     },
 
-    "about-cv-btn": {
-        es: "Descargar CV",
-        en: "Download CV"
-    },
-
     // --- Contacto ---
     "section-contacto": {
         es: "Contacto",
