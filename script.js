@@ -5,7 +5,7 @@
    Este archivo controla:
    - Los tags de expertise (clic para ver descripcion)
    - El menu hamburguesa en moviles
-   - El cambio de tema claro/oscuro
+
    - La sombra de la barra al hacer scroll
    - El link activo en la navegacion segun la seccion visible
    ========================================================== */
@@ -56,32 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.remove('active');
         });
     });
-
-    // --- Tema claro / oscuro ---
-    // Se guarda la preferencia en localStorage para que persista
-    const themeToggle = document.getElementById('themeToggle');
-    const savedTheme = localStorage.getItem('theme');
-
-    // Si ya eligio un tema antes, se aplica
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
-    }
-
-    themeToggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        updateThemeIcon(next);
-    });
-
-    // Cambia el icono entre luna (claro) y sol (oscuro)
-    function updateThemeIcon(theme) {
-        const icon = themeToggle.querySelector('i');
-        icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    }
 
     // --- Sombra en la barra de navegacion al hacer scroll ---
     const navbar = document.getElementById('navbar');

@@ -20,14 +20,14 @@
 }
 
 /* --- Variables CSS: colores y fuentes del sitio --- */
-/* Cambiar estos valores modifica todo el sitio */
+/* Tema oscuro unico */
 :root {
-    --color-bg: #FFFDF8;
-    --color-surface: #FFFFFF;
-    --color-text: #3B3534;
-    --color-text-secondary: #7A6E6A;
-    --color-accent: #D4A0A7;
-    --color-border: #EDE6DF;
+    --color-bg: #1E1C1B;
+    --color-surface: #2A2725;
+    --color-text: #E8E0DA;
+    --color-text-secondary: #A89E97;
+    --color-accent: #E0B3B9;
+    --color-border: #3D3835;
     --color-tag-1: #F4C6CE;
     --color-tag-2: #C2DEC8;
     --color-tag-3: #C0D6E8;
@@ -35,26 +35,12 @@
     --color-tag-5: #D6C4E8;
     --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
-    --radius: 8px;
-    --max-width: 900px;
-    --transition: 0.3s ease;
-}
-
-/* --- Tema oscuro --- */
-/* Se activa con el boton de luna/sol en la barra de navegacion */
-[data-theme="dark"] {
-    --color-bg: #1E1C1B;
-    --color-surface: #2A2725;
-    --color-text: #E8E0DA;
-    --color-text-secondary: #A89E97;
-    --color-accent: #E0B3B9;
-    --color-border: #3D3835;
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.45);
+    --radius: 8px;
+    --max-width: 900px;
+    --transition: 0.3s ease;
 }
 
 /* --- Reset: estilos base para todos los elementos --- */
@@ -177,8 +163,9 @@ body {
     background: var(--color-bg);
 }
 
-/* --- Boton de tema claro/oscuro --- */
+/* --- Boton de tema (deshabilitado, solo tema oscuro) --- */
 .theme-toggle {
+    display: none;
     background: none;
     border: none;
     color: var(--color-text-secondary);
