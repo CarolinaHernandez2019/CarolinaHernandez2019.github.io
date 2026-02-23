@@ -49,6 +49,10 @@ const traducciones = {
         es: "Cuando me preguntan a qué me dedico, siempre respondo: cosas de datos. Este sitio es justamente eso: un espacio para explorar y recopilar aprendizajes sobre datos.",
         en: "When people ask me what I do, I always answer: data stuff. This site is exactly that: a space to explore and gather learnings about data."
     },
+    "hero-intro-projects": {
+        es: "Estos proyectos reflejan mi enfoque con datos sociales: automatizar lo que se puede automatizar, visualizar lo que necesita ser comprendido y proteger lo que debe permanecer privado. Actualmente trabajo con datos de programas de juventud en Bogotá, diseñando tableros y reportes que ayudan a los equipos a tomar decisiones manteniendo segura la información sensible.",
+        en: "These projects reflect how I approach social data: automate what can be automated, visualize what needs to be understood, and protect what must stay private. Right now I work with youth program data in Bogotá, designing dashboards and reports that help teams make decisions while keeping sensitive information secure."
+    },
 
     // --- Temas / Expertise ---
     "section-temas": {
