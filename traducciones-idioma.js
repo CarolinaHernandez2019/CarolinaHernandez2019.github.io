@@ -50,7 +50,7 @@ const traducciones = {
         en: "When people ask me what I do, I always answer: data stuff. This site is exactly that: a space to explore and gather learnings about data."
     },
     "hero-intro-projects": {
-        es: "Estos proyectos reflejan mi enfoque con datos sociales: automatizar lo que se puede automatizar, visualizar lo que necesita ser comprendido y proteger lo que debe permanecer privado. Actualmente trabajo con datos de programas de juventud en Bogotá, diseñando tableros y reportes que ayudan a los equipos a tomar decisiones manteniendo segura la información sensible.",
+        es: "Actualmente trabajo con datos de programas de juventud en Bogotá, diseñando tableros y reportes que ayudan a los equipos operativos y de política pública a tomar decisiones basadas en datos. Estos proyectos reflejan mi enfoque con datos sociales: automatizar lo que se puede automatizar y compartir con todos los equipos de forma segura, visualizar para facilitar la comprensión de información. Todo esto teniendo en cuenta que los datos sociales no son solo datos, representan personas reales.",
         en: "These projects reflect how I approach social data: automate what can be automated, visualize what needs to be understood, and protect what must stay private. Right now I work with youth program data in Bogotá, designing dashboards and reports that help teams make decisions while keeping sensitive information secure."
     },
 
