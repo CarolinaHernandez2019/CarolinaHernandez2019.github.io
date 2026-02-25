@@ -50,7 +50,7 @@ const traducciones = {
         en: "When people ask me what I do, I always answer: data stuff. This site is exactly that: a space to explore and gather learnings about data."
     },
     "hero-intro-projects": {
-        es: "Actualmente trabajo con datos de programas de juventud en Bogotá, diseñando tableros y reportes para equipos operativos y de política pública.",
+        es: "Actualmente trabajo con datos de juventud de Bogotá, diseñando tableros y reportes para equipos operativos y de política pública.",
         en: "I currently work with youth social data in Bogotá, designing dashboards and reports for operational and public policy teams."
     },
 
