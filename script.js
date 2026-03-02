@@ -94,6 +94,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(section => observer.observe(section));
 
+    // --- Fade-in al scroll ---
+    // Las secciones con clase .fade-in aparecen suavemente al entrar en el viewport
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => fadeObserver.observe(el));
+
     // --- Cambio de idioma (espanol / ingles) ---
     // Se guarda la preferencia en localStorage para que persista entre visitas
     const langToggle = document.getElementById('langToggle');

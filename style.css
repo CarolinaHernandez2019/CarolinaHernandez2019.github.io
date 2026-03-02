@@ -129,17 +129,7 @@ body {
     color: var(--color-text);
 }
 
-/* Linea decorativa debajo del link activo */
-.nav-links a.active::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: var(--color-accent);
-    border-radius: 1px;
-}
+/* Linea decorativa debajo del link activo — ahora animada en la seccion de animaciones */
 
 /* --- Boton de cambio de idioma (ES/EN) --- */
 /* Se muestra junto al boton de tema en la barra de navegacion */
@@ -213,7 +203,24 @@ body {
 
 /* ========== HERO / PRESENTACION ========== */
 .hero {
+    position: relative;
     padding: 120px 0 80px;
+}
+
+/* Canvas de partículas — fondo del hero */
+#hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-container {
@@ -893,6 +900,37 @@ body {
 .footer p {
     font-size: 0.82rem;
     color: var(--color-text-secondary);
+}
+
+/* ========== ANIMACIONES DINAMICAS ========== */
+
+/* Fade-in al scroll — las secciones aparecen suavemente */
+.fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Underline animado en links del nav */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
 }
 
 /* ========== RESPONSIVE: MOVILES ========== */
