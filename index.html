@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n-attr="page-title">Data Stuff | Jenny Carolina Hernández Cardozo</title>
     <meta name="description" content="Ideas lab, information repository..." data-i18n-meta="meta-description">
-    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="stylesheet" href="style.css?v=13">
     <!-- Iconos de Font Awesome para redes sociales -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Fuente: Montserrat para todo el sitio -->
@@ -26,8 +26,8 @@
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#projects" data-i18n="nav-proyectos">Projects</a></li>
                 <li><a href="#about" data-i18n="nav-sobre">About</a></li>
+                <li><a href="#projects" data-i18n="nav-proyectos">Projects</a></li>
                 <li><a href="#contact" data-i18n="nav-contacto">Contact</a></li>
             </ul>
             <!-- Boton para cambiar idioma (espanol / ingles) -->
@@ -49,10 +49,182 @@
                     narratives that go beyond numbers, helping develop meaningful,
                     high-impact solutions. Focused in 2026 on data visualization.
                 </p>
+                <div class="hero-links">
+                    <a href="https://github.com/CarolinaHernandez2019" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/carolinahernandezcardozobogota/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=z-auRmUAAAAJ&hl=es" target="_blank" rel="noopener" aria-label="Google Scholar">
+                        <i class="fab fa-google-scholar"></i>
+                    </a>
+                    <a href="mailto:carolina.hernandez.car@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
             <div class="hero-photo-wrap">
                 <img src="profile.jpg" alt="Carolina Hernández" class="hero-photo">
             </div>
+        </div>
+    </section>
+
+    <!-- ========== TEMAS Y HERRAMIENTAS ========== -->
+    <!-- Expertise y herramientas tecnicas -->
+    <section class="about-me fade-in" id="about">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="section-temas">Topics</h2>
+            <div class="skill-tags">
+                <button class="skill-tag" data-skill="policy" style="--tag-color: #ede6f0;" data-i18n="skill-policy">
+                    Social data analysis
+                </button>
+                <button class="skill-tag" data-skill="data-viz" style="--tag-color: #ede6f0;" data-i18n="skill-dataviz">
+                    Data visualization
+                </button>
+                <button class="skill-tag" data-skill="monitoring" style="--tag-color: #ede6f0;" data-i18n="skill-monitoring">
+                    Public policy evaluation
+                </button>
+                <button class="skill-tag" data-skill="demographics" style="--tag-color: #ede6f0;" data-i18n="skill-demographics">
+                    Population analysis
+                </button>
+                <button class="skill-tag" data-skill="education" style="--tag-color: #ede6f0;" data-i18n="skill-education">
+                    Youth and education
+                </button>
+            </div>
+            <div class="skill-descriptions">
+                <div class="skill-desc" id="desc-policy">
+                    <p data-i18n="desc-policy">Research experience in labor markets, youth, education, and migration.
+                    Working with household surveys from Colombia and Latin America.</p>
+                </div>
+                <div class="skill-desc" id="desc-data-viz">
+                    <p data-i18n="desc-dataviz">For technical and non-technical audiences. Publication-ready visualizations
+                    in ggplot2 and Plotly. Currently studying D3.js to create interactive web visualizations.</p>
+                </div>
+                <div class="skill-desc" id="desc-monitoring">
+                    <p data-i18n="desc-monitoring">Experience in youth and education policy evaluation through my work
+                    with the IDB and the District Secretariat of Social Integration in Bogotá.</p>
+                </div>
+                <div class="skill-desc" id="desc-demographics">
+                    <p data-i18n="desc-demographics">Working on population topics since 2013, starting as a research assistant.
+                    Formal training with a master's degree in demography from El Colegio de México.</p>
+                </div>
+                <div class="skill-desc" id="desc-education">
+                    <p data-i18n="desc-education">Over 8 years specializing in analysis and evaluation of policies targeting
+                    young populations, with emphasis on education, employment, and participation.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title" data-i18n="subsection-herramientas">Tools</h3>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-r-project"></i>
+                    <span>R</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Stata</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>SAS</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-table-columns"></i>
+                    <span>Streamlit</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Power BI</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-map-location-dot"></i>
+                    <span>QGIS</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tool-item">
+                    <i class="fas fa-paintbrush"></i>
+                    <span>Illustrator</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PUBLICACIONES ========== -->
+    <!-- Publicaciones seleccionadas con imagen de portada -->
+    <section class="publications fade-in" id="publications">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="section-publicaciones">Selected publications</h2>
+            <div class="publications-grid">
+
+                <!-- Publicacion 0: Evaluacion de operaciones politica de juventud -->
+                <a href="https://felipe-calvo.github.io/static/sdis/PPDJ-Conpes-08-Evaluacion-Operaciones-2025-Informe-Completo.pdf" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/Evaluación de Operaciones Política Distrital de Juventud Bogotá.png" alt="Evaluación de operaciones de la política distrital de juventud de Bogotá">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub0-title">Operations evaluation of Bogotá's district youth policy</h3>
+                        <p class="publication-meta">SDIS · 2025</p>
+                    </div>
+                </a>
+
+                <!-- Publicacion 1: Educacion en la region Amazonica -->
+                <a href="http://dx.doi.org/10.18235/0012989" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/Educación en la región Amazónica.png" alt="Educación en la región Amazónica">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub1-title">Education in the Amazon region</h3>
+                        <p class="publication-meta">BID · 2024</p>
+                    </div>
+                </a>
+
+                <!-- Publicacion 2: Multiplicar aprendizajes -->
+                <a href="http://dx.doi.org/10.18235/0005309" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/Multiplicar aprendizajes tutorías a distancia para potenciar la escuela.png" alt="Multiplicar aprendizajes: tutorías a distancia para potenciar la escuela">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub2-title">Multiplying learning: remote tutoring to enhance schooling</h3>
+                        <p class="publication-meta">BID · 2023</p>
+                    </div>
+                </a>
+
+                <!-- Publicacion 3: Como reconstruir la educacion postpandemia -->
+                <a href="http://dx.doi.org/10.18235/0004241" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/¿Cómo reconstruir la educación postpandemia.png" alt="¿Cómo reconstruir la educación postpandemia?">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub3-title">How to reboot education post-pandemic</h3>
+                        <p class="publication-meta">BID · 2022</p>
+                    </div>
+                </a>
+
+                <!-- Publicacion 4: Estudiantes desvinculados -->
+                <a href="https://publications.iadb.org/es/hablemos-de-politica-educativa-10-estudiantes-desvinculados-los-costos-reales-de-la-pandemia" target="_blank" rel="noopener" class="publication-card">
+                    <div class="publication-image">
+                        <img src="Publicaciones/Estudiantes desvinculados, Los costos reales de la pandemia.png" alt="Estudiantes desvinculados: los costos reales de la pandemia">
+                    </div>
+                    <div class="publication-info">
+                        <h3 data-i18n="pub4-title">Disconnected students: the real costs of the pandemic</h3>
+                        <p class="publication-meta">BID · 2021</p>
+                    </div>
+                </a>
+
+            </div>
+            <p class="publications-more">
+                <a href="https://scholar.google.com/citations?user=z-auRmUAAAAJ&hl=es" target="_blank" rel="noopener">
+                    <span data-i18n="pub-scholar-link">See all publications on Google Scholar</span> →
+                </a>
+            </p>
         </div>
     </section>
 
@@ -163,190 +335,6 @@
         </div>
     </section>
 
-    <!-- ========== PUBLICACIONES ========== -->
-    <!-- Publicaciones seleccionadas con imagen de portada -->
-    <section class="publications fade-in" id="publications">
-        <div class="section-container">
-            <h2 class="section-title" data-i18n="section-publicaciones">Publications</h2>
-            <div class="publications-grid">
-
-                <!-- Publicacion 0: Evaluacion de operaciones politica de juventud -->
-                <a href="https://felipe-calvo.github.io/static/sdis/PPDJ-Conpes-08-Evaluacion-Operaciones-2025-Informe-Completo.pdf" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Evaluación de Operaciones Política Distrital de Juventud Bogotá.png" alt="Evaluación de operaciones de la política distrital de juventud de Bogotá">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub0-title">Operations evaluation of Bogotá's district youth policy</h3>
-                        <p class="publication-meta">SDIS · 2025</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 1: Educacion en la region Amazonica -->
-                <a href="http://dx.doi.org/10.18235/0012989" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Educación en la región Amazónica.png" alt="Educación en la región Amazónica">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub1-title">Education in the Amazon region</h3>
-                        <p class="publication-meta">BID · 2024</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 2: Multiplicar aprendizajes -->
-                <a href="http://dx.doi.org/10.18235/0005309" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Multiplicar aprendizajes tutorías a distancia para potenciar la escuela.png" alt="Multiplicar aprendizajes: tutorías a distancia para potenciar la escuela">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub2-title">Multiplying learning: remote tutoring to enhance schooling</h3>
-                        <p class="publication-meta">BID · 2023</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 3: Como reconstruir la educacion postpandemia -->
-                <a href="http://dx.doi.org/10.18235/0004241" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/¿Cómo reconstruir la educación postpandemia.png" alt="¿Cómo reconstruir la educación postpandemia?">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub3-title">How to reboot education post-pandemic</h3>
-                        <p class="publication-meta">BID · 2022</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 4: Estudiantes desvinculados -->
-                <a href="https://publications.iadb.org/es/hablemos-de-politica-educativa-10-estudiantes-desvinculados-los-costos-reales-de-la-pandemia" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Estudiantes desvinculados, Los costos reales de la pandemia.png" alt="Estudiantes desvinculados: los costos reales de la pandemia">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub4-title">Disconnected students: the real costs of the pandemic</h3>
-                        <p class="publication-meta">BID · 2021</p>
-                    </div>
-                </a>
-
-            </div>
-            <p class="publications-more">
-                <a href="https://scholar.google.com/citations?user=z-auRmUAAAAJ&hl=es" target="_blank" rel="noopener">
-                    <span data-i18n="pub-scholar-link">See all publications on Google Scholar</span> →
-                </a>
-            </p>
-        </div>
-    </section>
-
-    <!-- ========== SOBRE MI / PERFIL DE JENNY ========== -->
-    <!-- Seccion con foto, nombre, bio profesional y redes -->
-    <section class="about-me fade-in" id="about">
-        <div class="section-container">
-            <h2 class="section-title" data-i18n="section-sobre">About me</h2>
-            <div class="about-card">
-                <div class="about-image">
-                    <img src="profile.jpg" alt="Jenny Carolina Hernández Cardozo">
-                </div>
-                <div class="about-content">
-                    <h3 class="about-name">Jenny Carolina Hernández Cardozo</h3>
-                    <p class="about-location"><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
-                    <p class="about-bio" data-i18n="about-personal">Besides data, I love books, photography, watercolors, and my dog Congo. Always curious and learning about stuff.</p>
-                    <div class="hero-links">
-                        <a href="https://github.com/CarolinaHernandez2019" target="_blank" rel="noopener" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/carolinahernandezcardozobogota/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=z-auRmUAAAAJ&hl=es" target="_blank" rel="noopener" aria-label="Google Scholar">
-                            <i class="fab fa-google-scholar"></i>
-                        </a>
-                        <a href="mailto:carolina.hernandez.car@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Temas y herramientas como subsecciones de Sobre mi -->
-            <h3 class="subsection-title" data-i18n="section-temas">Topics</h3>
-            <div class="skill-tags">
-                <button class="skill-tag" data-skill="policy" style="--tag-color: #ede6f0;" data-i18n="skill-policy">
-                    Social data analysis
-                </button>
-                <button class="skill-tag" data-skill="data-viz" style="--tag-color: #ede6f0;" data-i18n="skill-dataviz">
-                    Data visualization
-                </button>
-                <button class="skill-tag" data-skill="monitoring" style="--tag-color: #ede6f0;" data-i18n="skill-monitoring">
-                    Public policy evaluation
-                </button>
-                <button class="skill-tag" data-skill="demographics" style="--tag-color: #ede6f0;" data-i18n="skill-demographics">
-                    Population analysis
-                </button>
-                <button class="skill-tag" data-skill="education" style="--tag-color: #ede6f0;" data-i18n="skill-education">
-                    Youth and education
-                </button>
-            </div>
-            <div class="skill-descriptions">
-                <div class="skill-desc" id="desc-policy">
-                    <p data-i18n="desc-policy">Research experience in labor markets, youth, education, and migration.
-                    Working with household surveys from Colombia and Latin America.</p>
-                </div>
-                <div class="skill-desc" id="desc-data-viz">
-                    <p data-i18n="desc-dataviz">For technical and non-technical audiences. Publication-ready visualizations
-                    in ggplot2 and Plotly. Currently studying D3.js to create interactive web visualizations.</p>
-                </div>
-                <div class="skill-desc" id="desc-monitoring">
-                    <p data-i18n="desc-monitoring">Experience in youth and education policy evaluation through my work
-                    with the IDB and the District Secretariat of Social Integration in Bogotá.</p>
-                </div>
-                <div class="skill-desc" id="desc-demographics">
-                    <p data-i18n="desc-demographics">Working on population topics since 2013, starting as a research assistant.
-                    Formal training with a master's degree in demography from El Colegio de México.</p>
-                </div>
-                <div class="skill-desc" id="desc-education">
-                    <p data-i18n="desc-education">Over 8 years specializing in analysis and evaluation of policies targeting
-                    young populations, with emphasis on education, employment, and participation.</p>
-                </div>
-            </div>
-
-            <h3 class="subsection-title" data-i18n="subsection-herramientas">Tools</h3>
-            <div class="tools-grid">
-                <div class="tool-item">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fab fa-r-project"></i>
-                    <span>R</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Stata</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>SAS</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-table-columns"></i>
-                    <span>Streamlit</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>Power BI</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-map-location-dot"></i>
-                    <span>QGIS</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-paintbrush"></i>
-                    <span>Illustrator</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ========== CONTACTO ========== -->
     <section class="contact fade-in" id="contact">
         <div class="section-container">
@@ -375,7 +363,7 @@
         </div>
     </footer>
 
-    <script src="traducciones-idioma.js?v=7"></script>
+    <script src="traducciones-idioma.js?v=8"></script>
     <script src="particles.js?v=4"></script>
     <script src="script.js?v=4"></script>
 </body>

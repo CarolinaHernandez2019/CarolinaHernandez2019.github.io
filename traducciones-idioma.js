@@ -185,8 +185,8 @@ const traducciones = {
 
     // --- Publicaciones ---
     "section-publicaciones": {
-        es: "Publicaciones",
-        en: "Publications"
+        es: "Publicaciones seleccionadas",
+        en: "Selected publications"
     },
     "pub0-title": {
         es: "Evaluación de operaciones de la política distrital de juventud de Bogotá",

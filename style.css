@@ -328,6 +328,7 @@ body {
     line-height: 1.7;
     color: var(--color-text-secondary);
     max-width: 480px;
+    margin-bottom: 24px;
 }
 
 /* Link dentro de la bio (ej: enlace a LinkedIn) */
