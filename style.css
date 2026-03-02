@@ -496,6 +496,7 @@ body {
 /* ========== PROYECTOS ========== */
 .projects {
     padding: 60px 0;
+    background: var(--color-surface);
 }
 
 .projects-intro {
@@ -762,6 +763,7 @@ body {
 /* ========== SOBRE MI ========== */
 .about-me {
     padding: 60px 0;
+    background: var(--color-surface);
 }
 
 /* Tarjeta con foto a la izquierda y texto a la derecha */
