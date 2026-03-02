@@ -20,21 +20,16 @@
 }
 
 /* --- Variables CSS: colores y fuentes del sitio --- */
-/* Paleta: Lilac, Poppy, Flamingo, Baby Blue, Olive */
+/* Tema claro minimalista — paleta lilac */
 :root {
-    --color-bg: #f9f7fb;
-    --color-surface: #eeedf4;
+    --color-bg: #faf8fb;
+    --color-surface: #f0edf4;
     --color-text: #2d2438;
     --color-text-secondary: #6b5f78;
     --color-accent: #E26728;
     --color-accent-hover: #c8551e;
     --color-accent-light: #fde8dd;
-    --color-border: #d8d2e0;
-    --color-lilac: #C9ADD1;
-    --color-poppy: #E26728;
-    --color-flamingo: #F69593;
-    --color-baby-blue: #C3CADC;
-    --color-olive: #BEA434;
+    --color-border: #ddd4e4;
     --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     --shadow-sm: 0 1px 3px rgba(45, 36, 56, 0.08);
@@ -267,7 +262,7 @@ body {
 
 /* Placeholder que se muestra mientras no haya foto */
 .image-placeholder {
-    background: linear-gradient(135deg, #C9ADD1 0%, #C3CADC 100%);
+    background: linear-gradient(135deg, #ddd4e4 0%, #9b7aa8 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,13 +548,13 @@ body {
 
 /* Cada tarjeta tiene un degradado diferente */
 .project-card:nth-child(1) .project-placeholder {
-    background: linear-gradient(135deg, #C9ADD1, #E26728);
+    background: linear-gradient(135deg, #ddd4e4, #9b7aa8);
 }
 .project-card:nth-child(2) .project-placeholder {
-    background: linear-gradient(135deg, #C3CADC, #F69593);
+    background: linear-gradient(135deg, #e6dced, #a886b5);
 }
 .project-card:nth-child(3) .project-placeholder {
-    background: linear-gradient(135deg, #F69593, #BEA434);
+    background: linear-gradient(135deg, #ede6f0, #b898c4);
 }
 
 .project-content {
