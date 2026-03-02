@@ -46,8 +46,8 @@ const traducciones = {
         en: "Portfolio, ideas lab, information repository"
     },
     "hero-bio": {
-        es: "Cuando me preguntan a qué me dedico, siempre respondo: cosas de datos. Este sitio es justamente eso: un espacio para explorar y recopilar aprendizajes sobre datos.",
-        en: "When people ask me what I do, I always answer: data stuff. This site is exactly that: a space to explore and gather learnings about data."
+        es: "Trabajo en análisis de datos sociales. Mi meta es convertir datos en narrativas que trasciendan los números, ayudando a desarrollar soluciones significativas y de impacto. Enfocada este 2026 en visualización de datos.",
+        en: "I work in social data analysis. My goal is to turn data into narratives that go beyond numbers, helping develop meaningful, high-impact solutions. Focused in 2026 on data visualization."
     },
     "hero-intro-projects": {
         es: "Actualmente trabajo con datos de juventud de Bogotá, diseñando tableros y reportes para equipos operativos y de política pública. Aquí comparto algunos apartados agregados y proyectos personales.",
