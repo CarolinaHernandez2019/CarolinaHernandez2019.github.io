@@ -17,16 +17,16 @@ class HeroParticles {
 
   init() {
     this.particles = []
-    // Pocas partículas para que sea sutil
-    const count = Math.floor((this.canvas.width * this.canvas.height) / 25000)
-    for (let i = 0; i < Math.min(count, 20); i++) {
+    // Más partículas para que las conexiones sean visibles
+    const count = Math.floor((this.canvas.width * this.canvas.height) / 12000)
+    for (let i = 0; i < Math.min(count, 50); i++) {
       this.particles.push({
         x: Math.random() * this.canvas.width,
         y: Math.random() * this.canvas.height,
-        vx: (Math.random() - 0.5) * 0.3,
-        vy: (Math.random() - 0.5) * 0.3,
-        radius: 1.5 + Math.random() * 1.5,
-        opacity: 0.15 + Math.random() * 0.2
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        radius: 2 + Math.random() * 2,
+        opacity: 0.25 + Math.random() * 0.25
       })
     }
     this.animate()
@@ -48,18 +48,18 @@ class HeroParticles {
       this.ctx.fill()
     })
 
-    // Líneas entre partículas cercanas
-    const maxDist = 150
+    // Líneas de conexión entre partículas cercanas
+    const maxDist = 180
     for (let i = 0; i < this.particles.length; i++) {
       for (let j = i + 1; j < this.particles.length; j++) {
         const dx = this.particles[i].x - this.particles[j].x
         const dy = this.particles[i].y - this.particles[j].y
         const dist = Math.sqrt(dx * dx + dy * dy)
         if (dist < maxDist) {
-          const opacity = (1 - dist / maxDist) * 0.08
+          const opacity = (1 - dist / maxDist) * 0.25
           this.ctx.beginPath()
           this.ctx.strokeStyle = `rgba(0, 119, 182, ${opacity})`
-          this.ctx.lineWidth = 0.5
+          this.ctx.lineWidth = 0.8
           this.ctx.moveTo(this.particles[i].x, this.particles[i].y)
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y)
           this.ctx.stroke()
