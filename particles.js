@@ -44,7 +44,7 @@ class HeroParticles {
 
       this.ctx.beginPath()
       this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2)
-      this.ctx.fillStyle = `rgba(0, 119, 182, ${p.opacity})`
+      this.ctx.fillStyle = `rgba(201, 173, 209, ${p.opacity})`
       this.ctx.fill()
     })
 
@@ -58,7 +58,7 @@ class HeroParticles {
         if (dist < maxDist) {
           const opacity = (1 - dist / maxDist) * 0.25
           this.ctx.beginPath()
-          this.ctx.strokeStyle = `rgba(0, 119, 182, ${opacity})`
+          this.ctx.strokeStyle = `rgba(201, 173, 209, ${opacity})`
           this.ctx.lineWidth = 0.8
           this.ctx.moveTo(this.particles[i].x, this.particles[i].y)
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y)
