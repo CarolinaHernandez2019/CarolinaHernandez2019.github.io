@@ -20,24 +20,26 @@
 }
 
 /* --- Variables CSS: colores y fuentes del sitio --- */
-/* Tema oscuro unico */
+/* Tema claro con paleta azul */
 :root {
-    --color-bg: #1E1C1B;
-    --color-surface: #2A2725;
-    --color-text: #E8E0DA;
-    --color-text-secondary: #A89E97;
-    --color-accent: #E0B3B9;
-    --color-border: #3D3835;
-    --color-tag-1: #F4C6CE;
-    --color-tag-2: #C2DEC8;
-    --color-tag-3: #C0D6E8;
-    --color-tag-4: #F0DFC8;
-    --color-tag-5: #D6C4E8;
+    --color-bg: #f7f9fc;
+    --color-surface: #edf4f8;
+    --color-text: #1a2e3b;
+    --color-text-secondary: #5a7a8a;
+    --color-accent: #0077b6;
+    --color-accent-hover: #005f8e;
+    --color-accent-light: #daeef7;
+    --color-border: #cde0ed;
+    --color-tag-1: #daeef7;
+    --color-tag-2: #d0e8f0;
+    --color-tag-3: #c0d6e8;
+    --color-tag-4: #b8d4e8;
+    --color-tag-5: #a8cce0;
     --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
-    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.45);
+    --shadow-sm: 0 1px 3px rgba(26, 46, 59, 0.08);
+    --shadow-md: 0 4px 12px rgba(26, 46, 59, 0.1);
+    --shadow-lg: 0 8px 30px rgba(26, 46, 59, 0.12);
     --radius: 8px;
     --max-width: 900px;
     --transition: 0.3s ease;
@@ -265,7 +267,7 @@ body {
 
 /* Placeholder que se muestra mientras no haya foto */
 .image-placeholder {
-    background: linear-gradient(135deg, #F4C6CE 0%, #D6C4E8 100%);
+    background: linear-gradient(135deg, #a8cce0 0%, #0077b6 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -408,7 +410,7 @@ body {
     border-radius: 24px;
     border: none;
     background: var(--tag-color);
-    color: #3B3534;
+    color: #1a2e3b;
     font-family: var(--font-body);
     font-size: 0.88rem;
     font-weight: 500;
@@ -550,13 +552,13 @@ body {
 
 /* Cada tarjeta tiene un degradado diferente */
 .project-card:nth-child(1) .project-placeholder {
-    background: linear-gradient(135deg, #F4C6CE, #D4A0A7);
+    background: linear-gradient(135deg, #a8cce0, #0077b6);
 }
 .project-card:nth-child(2) .project-placeholder {
-    background: linear-gradient(135deg, #C2DEC8, #A3C9AB);
+    background: linear-gradient(135deg, #b8d4e8, #0088cc);
 }
 .project-card:nth-child(3) .project-placeholder {
-    background: linear-gradient(135deg, #D6C4E8, #BBA8D4);
+    background: linear-gradient(135deg, #c0d6e8, #006da3);
 }
 
 .project-content {
@@ -741,8 +743,8 @@ body {
     align-items: center;
     gap: 8px;
     padding: 10px 20px;
-    background: #D6C4E8;
-    color: #3B3534;
+    background: var(--color-accent-light);
+    color: var(--color-accent);
     text-decoration: none;
     border-radius: 20px;
     font-size: 0.88rem;
@@ -861,8 +863,8 @@ body {
     align-items: center;
     gap: 8px;
     padding: 12px 28px;
-    background: #D6C4E8;
-    color: white;
+    background: var(--color-accent);
+    color: #ffffff;
     text-decoration: none;
     border-radius: 24px;
     font-size: 0.9rem;
