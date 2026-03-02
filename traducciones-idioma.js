@@ -222,6 +222,10 @@ const traducciones = {
         es: "Trabajo en análisis de datos sociales. Mi meta es convertir datos en narrativas que trasciendan los números, ayudando a desarrollar soluciones significativas y de impacto. Enfocada este 2026 en visualización de datos.",
         en: "I work in social data analysis. My goal is to turn data into narratives that go beyond numbers, helping develop meaningful, high-impact solutions. Focused in 2026 on data visualization."
     },
+    "about-personal": {
+        es: "Además de los datos, me encantan los libros, la fotografía, las acuarelas y mi perro Congo. Siempre curiosa y aprendiendo cosas nuevas.",
+        en: "Besides data, I love books, photography, watercolors, and my dog Congo. Always curious and learning about stuff."
+    },
 
     // --- Contacto ---
     "section-contacto": {
