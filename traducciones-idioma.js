@@ -148,10 +148,39 @@ const traducciones = {
         en: "Code"
     },
 
+    "project3-title": {
+        es: "Mapa interactivo de escuelas de Bogotá",
+        en: "Interactive map of schools in Bogotá"
+    },
+    "project3-desc": {
+        es: "Proyecto personal explorando visualización geoespacial de las más de 3.300 escuelas de Bogotá. Mapa coroplético interactivo por localidad con filtros por sector (oficial/privado) y gráficos de ranking. Construido con D3.js y React.",
+        en: "Personal project exploring geospatial visualization of Bogotá's 3,300+ schools. Interactive choropleth map by locality with filters by sector (public/private) and ranking charts. Built with D3.js and React."
+    },
+    "project3-badge": {
+        es: "En desarrollo",
+        en: "In development"
+    },
+    "project3-link-app": {
+        es: "Ver app",
+        en: "View app"
+    },
+    "project3-link-code": {
+        es: "Código",
+        en: "Code"
+    },
+
     // --- Tags de proyecto ---
     "tag-youth": {
         es: "Juventud",
         en: "Youth"
+    },
+    "tag-education": {
+        es: "Educación",
+        en: "Education"
+    },
+    "tag-personal": {
+        es: "Personal",
+        en: "Personal"
     },
 
     // --- Publicaciones ---
