@@ -387,7 +387,7 @@ body {
     font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 600;
-    margin: 40px 0 20px;
+    margin: 0 0 24px;
     color: var(--color-text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -489,10 +489,14 @@ body {
     color: var(--color-accent);
 }
 
+/* ========== HERRAMIENTAS (seccion separada) ========== */
+.tools-section {
+    padding: 60px 0;
+}
+
 /* ========== PROYECTOS ========== */
 .projects {
     padding: 60px 0;
-    background: var(--color-surface);
 }
 
 .projects-intro {
@@ -656,6 +660,7 @@ body {
 /* Seccion con publicaciones seleccionadas como tarjetas clickeables */
 .publications {
     padding: 60px 0;
+    background: var(--color-surface);
 }
 
 .publications-grid {
