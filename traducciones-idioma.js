@@ -219,8 +219,8 @@ const traducciones = {
         en: "About me"
     },
     "about-bio": {
-        es: "He trabajado +8 años en análisis de datos sociales con instituciones públicas colombianas y organizaciones como el BID. Mi enfoque: sistemas de monitoreo, evaluación de impacto en educación y juventud, y transformar datos de encuestas de hogares en información para política pública. Estudié economía y demografía, pero mucho de lo que sé viene del autoaprendizaje continuo.",
-        en: "I have 8+ years of experience in social data analysis with Colombian public institutions and organizations like the IDB. My focus: monitoring systems, impact evaluation in education and youth, and turning household survey data into information for public policy. I studied economics and demography, but much of what I know comes from continuous self-learning."
+        es: "Trabajo en análisis de datos sociales. Mi meta es convertir datos en narrativas que trasciendan los números, ayudando a desarrollar soluciones significativas y de impacto. Enfocada este 2026 en visualización de datos.",
+        en: "I work in social data analysis. My goal is to turn data into narratives that go beyond numbers, helping develop meaningful, high-impact solutions. Focused in 2026 on data visualization."
     },
 
     // --- Contacto ---
