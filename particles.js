@@ -17,14 +17,16 @@ class HeroParticles {
 
   init() {
     this.particles = []
-    // Más partículas para que las conexiones sean visibles
+    // Velocidad menor en móvil para que no se vean tan rápidas
+    const isMobile = this.canvas.width < 768
+    const speed = isMobile ? 0.15 : 0.4
     const count = Math.floor((this.canvas.width * this.canvas.height) / 12000)
     for (let i = 0; i < Math.min(count, 50); i++) {
       this.particles.push({
         x: Math.random() * this.canvas.width,
         y: Math.random() * this.canvas.height,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
+        vx: (Math.random() - 0.5) * speed,
+        vy: (Math.random() - 0.5) * speed,
         radius: 2 + Math.random() * 2,
         opacity: 0.25 + Math.random() * 0.25
       })
