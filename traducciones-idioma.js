@@ -51,7 +51,7 @@ const traducciones = {
     },
     "hero-intro-projects": {
         es: "Actualmente trabajo con datos de juventud de Bogotá, diseñando tableros y reportes para equipos operativos y de política pública. Aquí comparto algunos apartados agregados y proyectos personales.",
-        en: "I currently work with youth social data in Bogotá, designing dashboards and reports for operational and public policy teams. Here I share some aggregated outputs and personal projects."
+        en: "I currently work with youth social data in Bogota, designing dashboards and reports for operational and public policy teams. Here I share some aggregated outputs and personal projects."
     },
 
     // --- Temas / Expertise ---
@@ -93,7 +93,7 @@ const traducciones = {
     },
     "desc-monitoring": {
         es: "Experiencia en evaluación de políticas de juventud y educación a través de mi trabajo con el BID y la Secretaría Distrital de Integración Social de Bogotá.",
-        en: "Experience in youth and education policy evaluation through my work with the IDB and the District Secretariat of Social Integration in Bogotá."
+        en: "Experience in youth and education policy evaluation through my work with the IDB and the District Secretariat of Social Integration in Bogota."
     },
     "desc-education": {
         es: "Más de 8 años especializándome en análisis y evaluación de políticas dirigidas a población joven, con énfasis en educación, empleo y participación.",
@@ -117,7 +117,7 @@ const traducciones = {
     },
     "project1-title": {
         es: "Tablero de priorización para programas de juventud en Bogotá",
-        en: "Prioritization dashboard for youth programs in Bogotá"
+        en: "Prioritization dashboard for youth programs in Bogota"
     },
     "project1-desc": {
         es: "Desarrollado para apoyar la asignación de programas sociales de la Secretaría Distrital de Integración Social. Permite identificar localidades con mayor concentración de jóvenes vulnerables según SISBEN 2024 y comparar necesidades entre territorios.",
@@ -150,11 +150,11 @@ const traducciones = {
 
     "project3-title": {
         es: "Mapa interactivo de escuelas de Bogotá",
-        en: "Interactive map of schools in Bogotá"
+        en: "Interactive map of schools in Bogota"
     },
     "project3-desc": {
         es: "Proyecto personal explorando visualización geoespacial de las más de 3.300 escuelas de Bogotá.",
-        en: "Personal project exploring geospatial visualization of Bogotá's 3,300+ schools."
+        en: "Personal project exploring geospatial visualization of Bogota's 3,300+ schools."
     },
     "project3-badge": {
         es: "En desarrollo",
@@ -190,7 +190,7 @@ const traducciones = {
     },
     "pub0-title": {
         es: "Evaluación de operaciones de la política distrital de juventud de Bogotá",
-        en: "Operations evaluation of Bogotá's district youth policy"
+        en: "Operations evaluation of Bogota's district youth policy"
     },
     "pub1-title": {
         es: "Educación en la región Amazónica",
