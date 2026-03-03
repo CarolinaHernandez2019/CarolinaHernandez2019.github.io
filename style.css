@@ -721,6 +721,14 @@ body {
     color: var(--color-text-secondary);
 }
 
+/* Indicador de idioma disponible */
+.publication-lang {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 0.5px;
+}
+
 /* Link a Google Scholar debajo de las tarjetas */
 .publications-more {
     margin-top: 24px;
