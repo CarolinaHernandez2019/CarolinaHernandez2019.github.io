@@ -77,14 +77,20 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
+    background: transparent;
+    border-bottom: none;
     transition: background var(--transition), box-shadow var(--transition);
+}
+
+/* Al hacer scroll, la barra gana fondo solido */
+.navbar.scrolled {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
 }
 
 /* Cuando se hace scroll, la barra gana sombra */
 .navbar.scrolled {
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 .nav-container {
@@ -94,36 +100,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
-}
-
-.nav-logo {
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--color-accent);
-    text-decoration: none;
-    letter-spacing: -0.02em;
+    height: 56px;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 40px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--color-text-secondary);
-    font-size: 0.9rem;
-    font-weight: 400;
+    color: var(--color-text);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     transition: color var(--transition);
     position: relative;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--color-text);
+    color: var(--color-accent);
 }
 
 /* Linea decorativa debajo del link activo — ahora animada en la seccion de animaciones */
@@ -168,34 +167,28 @@ body {
     background: var(--color-bg);
 }
 
-/* --- Boton hamburguesa para moviles --- */
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
+/* --- Typewriter: subtitulo animado en el hero --- */
+.hero-typewriter {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-accent);
+    margin-bottom: 24px;
+    min-height: 1.5em;
 }
 
-.nav-toggle span {
-    width: 22px;
-    height: 2px;
-    background: var(--color-text);
-    border-radius: 2px;
-    transition: transform var(--transition), opacity var(--transition);
+/* Cursor parpadeante al final del texto */
+.hero-typewriter::after {
+    content: '|';
+    animation: blink-cursor 0.8s infinite;
+    color: var(--color-accent);
+    font-weight: 300;
+    margin-left: 2px;
 }
 
-/* Animacion del boton hamburguesa cuando esta abierto */
-.nav-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-.nav-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-.nav-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+@keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 /* ========== HERO / PRESENTACION ========== */
@@ -949,27 +942,13 @@ body {
 /* ========== RESPONSIVE: MOVILES ========== */
 /* Ajustes para pantallas menores a 768px */
 @media (max-width: 768px) {
-    /* Navegacion en hamburguesa */
-    .nav-toggle {
-        display: flex;
-    }
-
+    /* Navegacion: siempre visible, compacta en movil */
     .nav-links {
-        display: none;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        background: var(--color-surface);
-        flex-direction: column;
-        padding: 16px 24px;
-        gap: 12px;
-        border-bottom: 1px solid var(--color-border);
-        box-shadow: var(--shadow-md);
+        gap: 24px;
     }
 
-    .nav-links.active {
-        display: flex;
+    .nav-links a {
+        font-size: 0.72rem;
     }
 
     /* Hero: foto arriba, texto abajo en movil */

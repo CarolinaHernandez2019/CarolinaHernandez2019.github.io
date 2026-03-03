@@ -39,23 +39,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Menu hamburguesa (moviles) ---
-    // Abre y cierra el menu de navegacion en pantallas pequenas
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
+    // --- Typewriter: "Data Stuff" / "Cosas de Datos" letra por letra ---
+    const typewriterEl = document.getElementById('typewriter');
+    let typewriterTimeout = null;
 
-    navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
+    function typewrite(texto, callback) {
+        // Limpia cualquier animacion anterior
+        if (typewriterTimeout) clearTimeout(typewriterTimeout);
+        typewriterEl.textContent = '';
+        let i = 0;
 
-    // Cerrar el menu al hacer clic en un link
-    navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navLinks.classList.remove('active');
-        });
-    });
+        function escribir() {
+            if (i < texto.length) {
+                typewriterEl.textContent += texto.charAt(i);
+                i++;
+                typewriterTimeout = setTimeout(escribir, 80);
+            } else if (callback) {
+                callback();
+            }
+        }
+        escribir();
+    }
+
+    // Textos del typewriter por idioma
+    const typewriterTextos = {
+        es: 'Cosas de Datos',
+        en: 'Data Stuff'
+    };
 
     // --- Sombra en la barra de navegacion al hacer scroll ---
     const navbar = document.getElementById('navbar');
@@ -155,5 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (metaDesc && traducciones['meta-description'] && traducciones['meta-description'][lang]) {
             metaDesc.setAttribute('content', traducciones['meta-description'][lang]);
         }
+
+        // Dispara el typewriter con el texto del idioma actual
+        typewrite(typewriterTextos[lang]);
     }
 });
