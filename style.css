@@ -167,30 +167,6 @@ body {
     background: var(--color-bg);
 }
 
-/* --- Typewriter: subtitulo animado en el hero --- */
-.hero-typewriter {
-    font-family: var(--font-body);
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--color-accent);
-    margin-bottom: 24px;
-    min-height: 1.5em;
-}
-
-/* Cursor parpadeante al final del texto */
-.hero-typewriter::after {
-    content: '|';
-    animation: blink-cursor 0.8s infinite;
-    color: var(--color-accent);
-    font-weight: 300;
-    margin-left: 2px;
-}
-
-@keyframes blink-cursor {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-
 /* ========== HERO / PRESENTACION ========== */
 .hero {
     position: relative;

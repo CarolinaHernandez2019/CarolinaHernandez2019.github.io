@@ -39,48 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Typewriter: "Data Stuff" / "Cosas de Datos" en loop ---
-    // Escribe letra por letra, pausa, borra, pausa y repite
-    const typewriterEl = document.getElementById('typewriter');
-    let typewriterTimeout = null;
-
-    function typewrite(texto) {
-        // Limpia cualquier animacion anterior
-        if (typewriterTimeout) clearTimeout(typewriterTimeout);
-        typewriterEl.textContent = '';
-        let i = 0;
-
-        function escribir() {
-            if (i < texto.length) {
-                typewriterEl.textContent += texto.charAt(i);
-                i++;
-                typewriterTimeout = setTimeout(escribir, 80);
-            } else {
-                // Pausa 2s con el texto completo, luego borra
-                typewriterTimeout = setTimeout(borrar, 2000);
-            }
-        }
-
-        function borrar() {
-            const actual = typewriterEl.textContent;
-            if (actual.length > 0) {
-                typewriterEl.textContent = actual.slice(0, -1);
-                typewriterTimeout = setTimeout(borrar, 40);
-            } else {
-                // Pausa breve vacio, luego reescribe
-                typewriterTimeout = setTimeout(escribir, 200);
-            }
-        }
-
-        escribir();
-    }
-
-    // Textos del typewriter por idioma
-    const typewriterTextos = {
-        es: 'Cosas de Datos',
-        en: 'Data Stuff'
-    };
-
     // --- Sombra en la barra de navegacion al hacer scroll ---
     const navbar = document.getElementById('navbar');
 
@@ -180,7 +138,5 @@ document.addEventListener('DOMContentLoaded', () => {
             metaDesc.setAttribute('content', traducciones['meta-description'][lang]);
         }
 
-        // Dispara el typewriter con el texto del idioma actual
-        typewrite(typewriterTextos[lang]);
     }
 });
