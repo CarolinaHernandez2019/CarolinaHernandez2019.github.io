@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 typewriterEl.textContent = actual.slice(0, -1);
                 typewriterTimeout = setTimeout(borrar, 40);
             } else {
-                // Pausa 500ms vacio, luego reescribe
-                typewriterTimeout = setTimeout(escribir, 500);
+                // Pausa breve vacio, luego reescribe
+                typewriterTimeout = setTimeout(escribir, 200);
             }
         }
 
