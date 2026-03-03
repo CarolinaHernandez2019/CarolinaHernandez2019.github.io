@@ -220,6 +220,10 @@ const traducciones = {
         es: "Disponible en español e inglés",
         en: "Available in Spanish and English"
     },
+    "pub-lang-es-en-pt": {
+        es: "Disponible en español, inglés y portugués",
+        en: "Available in Spanish, English and Portuguese"
+    },
     "pub-scholar-link": {
         es: "Ver todas las publicaciones en Google Scholar",
         en: "See all publications on Google Scholar"
