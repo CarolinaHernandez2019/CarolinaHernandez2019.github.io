@@ -39,11 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Typewriter: "Data Stuff" / "Cosas de Datos" letra por letra ---
+    // --- Typewriter: "Data Stuff" / "Cosas de Datos" en loop ---
+    // Escribe letra por letra, pausa, borra, pausa y repite
     const typewriterEl = document.getElementById('typewriter');
     let typewriterTimeout = null;
 
-    function typewrite(texto, callback) {
+    function typewrite(texto) {
         // Limpia cualquier animacion anterior
         if (typewriterTimeout) clearTimeout(typewriterTimeout);
         typewriterEl.textContent = '';
@@ -54,10 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 typewriterEl.textContent += texto.charAt(i);
                 i++;
                 typewriterTimeout = setTimeout(escribir, 80);
-            } else if (callback) {
-                callback();
+            } else {
+                // Pausa 2s con el texto completo, luego borra
+                typewriterTimeout = setTimeout(borrar, 2000);
             }
         }
+
+        function borrar() {
+            const actual = typewriterEl.textContent;
+            if (actual.length > 0) {
+                typewriterEl.textContent = actual.slice(0, -1);
+                typewriterTimeout = setTimeout(borrar, 40);
+            } else {
+                // Pausa 500ms vacio, luego reescribe
+                typewriterTimeout = setTimeout(escribir, 500);
+            }
+        }
+
         escribir();
     }
 
