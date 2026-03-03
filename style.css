@@ -723,10 +723,11 @@ body {
 
 /* Indicador de idioma disponible */
 .publication-lang {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--color-accent);
-    letter-spacing: 0.5px;
+    font-size: 0.72rem;
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-top: 4px;
+    opacity: 0.75;
 }
 
 /* Link a Google Scholar debajo de las tarjetas */

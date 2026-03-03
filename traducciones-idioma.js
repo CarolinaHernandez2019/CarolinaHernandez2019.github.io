@@ -212,6 +212,14 @@ const traducciones = {
         es: "Adolescentes y conductas punibles en Bogotá: factores asociados y evidencia",
         en: "Adolescents and punishable conduct in Bogota: associated factors and evidence"
     },
+    "pub-lang-es": {
+        es: "Disponible en español",
+        en: "Available in Spanish"
+    },
+    "pub-lang-es-en": {
+        es: "Disponible en español e inglés",
+        en: "Available in Spanish and English"
+    },
     "pub-scholar-link": {
         es: "Ver todas las publicaciones en Google Scholar",
         en: "See all publications on Google Scholar"
