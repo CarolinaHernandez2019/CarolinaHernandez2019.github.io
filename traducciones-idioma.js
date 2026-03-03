@@ -208,6 +208,10 @@ const traducciones = {
         es: "Estudiantes desvinculados: los costos reales de la pandemia",
         en: "Disconnected students: the real costs of the pandemic"
     },
+    "pub5-title": {
+        es: "Adolescentes y conductas punibles en Bogotá: factores asociados y evidencia",
+        en: "Adolescents and criminal behavior in Bogotá: associated factors and evidence"
+    },
     "pub-scholar-link": {
         es: "Ver todas las publicaciones en Google Scholar",
         en: "See all publications on Google Scholar"
