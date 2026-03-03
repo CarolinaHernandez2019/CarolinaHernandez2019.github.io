@@ -210,7 +210,7 @@ const traducciones = {
     },
     "pub5-title": {
         es: "Adolescentes y conductas punibles en Bogotá: factores asociados y evidencia",
-        en: "Adolescents and punishable conduct in Bogotá: associated factors and evidence"
+        en: "Adolescents and punishable conduct in Bogota: associated factors and evidence"
     },
     "pub-scholar-link": {
         es: "Ver todas las publicaciones en Google Scholar",
