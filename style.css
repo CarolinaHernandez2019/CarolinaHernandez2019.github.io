@@ -213,14 +213,13 @@ body {
     flex: 1;
 }
 
-/* Etiqueta superior tipo "eyebrow" */
+/* Saludo / intro antes del nombre */
 .hero-eyebrow {
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--color-accent);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--color-text-secondary);
     margin-bottom: 16px;
+    max-width: 480px;
 }
 
 /* Foto circular a la derecha */
