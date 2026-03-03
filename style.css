@@ -167,6 +167,15 @@ body {
     background: var(--color-bg);
 }
 
+/* --- Subtitulo "Cosas de Datos" debajo del nombre --- */
+.hero-tagline {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-accent);
+    margin-bottom: 24px;
+}
+
 /* ========== HERO / PRESENTACION ========== */
 .hero {
     position: relative;
