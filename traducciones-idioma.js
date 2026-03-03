@@ -42,8 +42,8 @@ const traducciones = {
         en: "Carolina Hernández · Data Stuff"
     },
     "hero-subtitle": {
-        es: "Hola, soy Carolina — esta página es mi repositorio de información, laboratorio de ideas y portafolio",
-        en: "Hi, I'm Carolina — this page is my information repository, ideas lab, and portfolio"
+        es: "Hola, soy Carolina. Esta página es mi repositorio de información, laboratorio de ideas y portafolio",
+        en: "Hi, I'm Carolina. This page is my information repository, ideas lab, and portfolio"
     },
     "hero-tagline": {
         es: "Cosas de Datos",
