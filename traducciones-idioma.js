@@ -253,11 +253,11 @@ const traducciones = {
 
     // --- Metadatos de la pagina ---
     "page-title": {
-        es: "Cosas de Datos | Jenny Carolina Hernández Cardozo",
-        en: "Data Stuff | Jenny Carolina Hernández Cardozo"
+        es: "Jenny Carolina Hernández Cardozo | Economista y demógrafa · Análisis de datos sociales en Colombia",
+        en: "Jenny Carolina Hernández Cardozo | Economist & demographer · Social data analysis in Colombia"
     },
     "meta-description": {
-        es: "Laboratorio de ideas, repositorio de información...",
-        en: "Ideas lab, information repository..."
+        es: "Jenny Carolina Hernández Cardozo — economista y demógrafa especializada en análisis de datos sociales, evaluación de políticas públicas y visualización de datos en Colombia.",
+        en: "Jenny Carolina Hernández Cardozo — economist and demographer specializing in social data analysis, public policy evaluation, and data visualization in Colombia."
     }
 };
