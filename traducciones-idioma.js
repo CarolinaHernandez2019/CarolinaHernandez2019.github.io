@@ -79,10 +79,6 @@ const traducciones = {
         es: "Evaluación de políticas públicas",
         en: "Public policy evaluation"
     },
-    "skill-education": {
-        es: "Juventud y educación",
-        en: "Youth and education"
-    },
     "desc-policy": {
         es: "Experiencia en investigación sobre mercado laboral, juventud, educación y migración. Trabajo con encuestas de hogares de Colombia y América Latina.",
         en: "Research experience in labor markets, youth, education, and migration. Working with household surveys from Colombia and Latin America."
@@ -96,12 +92,8 @@ const traducciones = {
         en: "For technical and non-technical audiences. Publication-ready visualizations in ggplot2 and Plotly. Currently studying D3.js to create interactive web visualizations."
     },
     "desc-monitoring": {
-        es: "Experiencia en evaluación de políticas de juventud y educación a través de mi trabajo con el BID y la Secretaría Distrital de Integración Social de Bogotá.",
-        en: "Experience in youth and education policy evaluation through my work with the IDB and the District Secretariat of Social Integration in Bogota."
-    },
-    "desc-education": {
-        es: "Más de 8 años especializándome en análisis y evaluación de políticas dirigidas a población joven, con énfasis en educación, empleo y participación.",
-        en: "Over 8 years specializing in analysis and evaluation of policies targeting young populations, with emphasis on education, employment, and participation."
+        es: "Experiencia en evaluación de políticas de juventud y educación.",
+        en: "Experience in youth and education policy evaluation."
     },
     "subsection-herramientas": {
         es: "Herramientas",
