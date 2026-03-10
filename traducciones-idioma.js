@@ -67,10 +67,6 @@ const traducciones = {
         es: "Análisis de datos sociales",
         en: "Social data analysis"
     },
-    "skill-demographics": {
-        es: "Análisis poblacional",
-        en: "Population analysis"
-    },
     "skill-dataviz": {
         es: "Visualización de datos",
         en: "Data visualization"
@@ -82,10 +78,6 @@ const traducciones = {
     "desc-policy": {
         es: "Experiencia en investigación sobre mercado laboral, juventud, educación y migración. Trabajo con encuestas de hogares de Colombia y América Latina.",
         en: "Research experience in labor markets, youth, education, and migration. Working with household surveys from Colombia and Latin America."
-    },
-    "desc-demographics": {
-        es: "Desde 2013 trabajando en temas poblacionales, comenzando como asistente de investigación. Formación formal con maestría en demografía en El Colegio de México.",
-        en: "Working on population topics since 2013, starting as a research assistant. Formal training with a master's degree in demography from El Colegio de México."
     },
     "desc-dataviz": {
         es: "Para públicos técnicos y no técnicos. Visualizaciones listas para publicación en ggplot2 y Plotly. Actualmente estudiando D3.js para crear visualizaciones web interactivas.",
