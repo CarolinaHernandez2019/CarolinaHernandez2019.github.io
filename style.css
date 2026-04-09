@@ -1082,18 +1082,24 @@ body {
     }
 
     /* Hero: foto arriba, texto abajo en movil */
+    .hero {
+        padding: 80px 0 40px;
+        min-height: auto;
+    }
+
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
+        gap: 16px;
     }
 
     .hero-photo {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
     }
 
     .hero-eyebrow {
-        margin-top: 24px;
+        margin-top: 8px;
     }
 
     .hero-tagline {
