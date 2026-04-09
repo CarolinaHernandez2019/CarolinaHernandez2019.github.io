@@ -7,44 +7,39 @@
     <meta name="description" content="Jenny Carolina Hernández Cardozo — economista y demógrafa especializada en análisis de datos sociales, evaluación de políticas públicas y visualización de datos en Colombia." data-i18n-meta="meta-description">
     <meta name="keywords" content="Jenny Carolina Hernández Cardozo, Carolina Hernández economista, análisis de datos Colombia, datos sociales, evaluación de políticas públicas, demografía Colombia, visualización de datos">
     <link rel="canonical" href="https://carolinahernandez2019.github.io/">
-    <!-- Open Graph -->
     <meta property="og:title" content="Jenny Carolina Hernández Cardozo | Economista y demógrafa">
     <meta property="og:description" content="Economista y demógrafa especializada en análisis de datos sociales, evaluación de políticas públicas y visualización de datos en Colombia.">
     <meta property="og:url" content="https://carolinahernandez2019.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
-    <link rel="stylesheet" href="style.css?v=18">
-    <!-- Iconos de Font Awesome para redes sociales -->
+    <link rel="stylesheet" href="style.css?v=20">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Fuente: Montserrat para todo el sitio -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- ========== NAVEGACION ========== -->
-    <!-- Barra superior fija con links a cada seccion -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about" data-i18n="nav-sobre">About</a></li>
-                <li><a href="#projects" data-i18n="nav-proyectos">Projects</a></li>
+                <li><a href="index.html" data-i18n="nav-inicio">Home</a></li>
+                <li><a href="about.html" data-i18n="nav-proyectos">Projects</a></li>
+                <li><a href="publications.html" data-i18n="nav-publicaciones">Publications</a></li>
             </ul>
-            <!-- Boton para cambiar idioma (espanol / ingles) -->
             <button class="lang-toggle" id="langToggle" aria-label="Switch language">
                 ES
             </button>
         </div>
     </nav>
 
-    <!-- ========== HERO / PRESENTACION ========== -->
+    <!-- ========== HERO / BUSINESS CARD ========== -->
     <section class="hero" id="inicio">
         <canvas id="hero-particles"></canvas>
         <div class="hero-container">
             <div class="hero-content">
-                <p class="hero-eyebrow" data-i18n="hero-subtitle">Hi, I'm Carolina. This page is my information repository, ideas lab, and portfolio</p>
-                <h1 class="hero-name" data-i18n="hero-tagline">Data Stuff</h1>
+                <p class="hero-eyebrow"><span data-i18n="hero-hi">Hi, I'm</span> Carolina. <span data-i18n="hero-subtitle-rest">This page is my information repository, ideas lab, and portfolio</span></p>
+                <h1 class="hero-name"><span class="highlight" data-i18n="hero-tagline">Data Stuff</span></h1>
                 <div class="hero-links">
                     <a href="https://www.linkedin.com/in/carolinahernandezcardozobogota/" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
@@ -59,6 +54,7 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
+                <p class="hero-lema" data-i18n="hero-lema">Social data is not just numbers, it's people, lives, and stories. I work with that respect and responsibility at the center.</p>
             </div>
             <div class="hero-photo-wrap">
                 <img src="profile.jpg" alt="Carolina Hernández" class="hero-photo">
@@ -66,288 +62,14 @@
         </div>
     </section>
 
-    <!-- ========== TEMAS ========== -->
-    <!-- Expertise profesional -->
-    <section class="about-me fade-in" id="about">
-        <div class="section-container">
-            <h2 class="subsection-title" data-i18n="section-temas">Topics</h2>
-            <div class="skill-tags">
-                <button class="skill-tag" data-skill="policy" style="--tag-color: #ede6f0;" data-i18n="skill-policy">
-                    Social data analysis
-                </button>
-                <button class="skill-tag" data-skill="data-viz" style="--tag-color: #ede6f0;" data-i18n="skill-dataviz">
-                    Data visualization
-                </button>
-                <button class="skill-tag" data-skill="monitoring" style="--tag-color: #ede6f0;" data-i18n="skill-monitoring">
-                    Public policy evaluation
-                </button>
-            </div>
-            <div class="skill-descriptions">
-                <div class="skill-desc" id="desc-policy">
-                    <p data-i18n="desc-policy">Research experience in labor markets, youth, education, and migration.
-                    Working with household surveys from Colombia and Latin America.</p>
-                </div>
-                <div class="skill-desc" id="desc-data-viz">
-                    <p data-i18n="desc-dataviz">For technical and non-technical audiences. Publication-ready visualizations
-                    in ggplot2 and Plotly. Currently studying D3.js to create interactive web visualizations.</p>
-                </div>
-                <div class="skill-desc" id="desc-monitoring">
-                    <p data-i18n="desc-monitoring">Experience in youth and education policy evaluation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== HERRAMIENTAS ========== -->
-    <!-- Herramientas tecnicas -->
-    <section class="tools-section fade-in" id="tools">
-        <div class="section-container">
-            <h2 class="subsection-title" data-i18n="subsection-herramientas">Tools</h2>
-            <div class="tools-grid">
-                <div class="tool-item">
-                    <i class="fab fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fab fa-r-project"></i>
-                    <span>R</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Stata</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>SAS</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-table-columns"></i>
-                    <span>Streamlit</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>Power BI</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-map-location-dot"></i>
-                    <span>QGIS</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-                <div class="tool-item">
-                    <i class="fas fa-paintbrush"></i>
-                    <span>Illustrator</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== PUBLICACIONES ========== -->
-    <!-- Publicaciones seleccionadas con imagen de portada -->
-    <section class="publications fade-in" id="publications">
-        <div class="section-container">
-            <h2 class="section-title" data-i18n="section-publicaciones">Selected publications</h2>
-            <div class="publications-grid">
-
-                <!-- Publicacion 0: Adolescentes y conductas punibles -->
-                <a href="https://www.integracionsocial.gov.co/index.php/noticias/94-noticias-juventud/7770-bogota-presenta-estudio-que-analiza-los-factores-asociados-a-la-vinculacion-de-adolescentes-a-conductas-punibles" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Adolescentes y conductas punibles en Bogotá factores asociados y evidencia.png" alt="Adolescentes y conductas punibles en Bogotá: factores asociados y evidencia">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub5-title">Adolescents and punishable conduct in Bogota: associated factors and evidence</h3>
-                        <p class="publication-meta">SDIS · 2026</p>
-                        <p class="publication-lang" data-i18n="pub-lang-es">Disponible en español</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 1: Evaluacion de operaciones politica de juventud -->
-                <a href="https://felipe-calvo.github.io/static/sdis/PPDJ-Conpes-08-Evaluacion-Operaciones-2025-Informe-Completo.pdf" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Evaluación de Operaciones Política Distrital de Juventud Bogotá.png" alt="Evaluación de operaciones de la política distrital de juventud de Bogotá">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub0-title">Operations evaluation of Bogota's district youth policy</h3>
-                        <p class="publication-meta">SDIS · 2025</p>
-                        <p class="publication-lang" data-i18n="pub-lang-es">Disponible en español</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 2: Educacion en la region Amazonica -->
-                <a href="http://dx.doi.org/10.18235/0012989" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Educación en la región Amazónica.png" alt="Educación en la región Amazónica">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub1-title">Education in the Amazon region</h3>
-                        <p class="publication-meta">BID · 2024</p>
-                        <p class="publication-lang" data-i18n="pub-lang-es-en-pt">Disponible en español, inglés y portugués</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 3: Multiplicar aprendizajes -->
-                <a href="http://dx.doi.org/10.18235/0005309" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Multiplicar aprendizajes tutorías a distancia para potenciar la escuela.png" alt="Multiplicar aprendizajes: tutorías a distancia para potenciar la escuela">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub2-title">Multiplying learning: remote tutoring to enhance schooling</h3>
-                        <p class="publication-meta">BID · 2023</p>
-                        <p class="publication-lang" data-i18n="pub-lang-es-en">Disponible en español e inglés</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 4: Como reconstruir la educacion postpandemia -->
-                <a href="http://dx.doi.org/10.18235/0004241" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/¿Cómo reconstruir la educación postpandemia.png" alt="¿Cómo reconstruir la educación postpandemia?">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub3-title">How to reboot education post-pandemic</h3>
-                        <p class="publication-meta">BID · 2022</p>
-                        <p class="publication-lang" data-i18n="pub-lang-es-en">Disponible en español e inglés</p>
-                    </div>
-                </a>
-
-                <!-- Publicacion 5: Estudiantes desvinculados -->
-                <a href="https://publications.iadb.org/es/hablemos-de-politica-educativa-10-estudiantes-desvinculados-los-costos-reales-de-la-pandemia" target="_blank" rel="noopener" class="publication-card">
-                    <div class="publication-image">
-                        <img src="Publicaciones/Estudiantes desvinculados, Los costos reales de la pandemia.png" alt="Estudiantes desvinculados: los costos reales de la pandemia">
-                    </div>
-                    <div class="publication-info">
-                        <h3 data-i18n="pub4-title">Disconnected students: the real costs of the pandemic</h3>
-                        <p class="publication-meta">BID · 2021</p>
-                        <p class="publication-lang" data-i18n="pub-lang-es">Disponible en español</p>
-                    </div>
-                </a>
-
-            </div>
-            <p class="publications-more">
-                <a href="https://scholar.google.com/citations?user=z-auRmUAAAAJ&hl=es" target="_blank" rel="noopener">
-                    <span data-i18n="pub-scholar-link">See all publications on Google Scholar</span> →
-                </a>
-            </p>
-        </div>
-    </section>
-
-    <!-- ========== PROYECTOS ========== -->
-    <!-- Tarjetas con proyectos destacados -->
-    <section class="projects fade-in" id="projects">
-        <div class="section-container">
-            <h2 class="section-title" data-i18n="section-proyectos">Recent projects</h2>
-            <p class="projects-intro" data-i18n="hero-intro-projects">
-                I currently work with youth social data in Bogota, designing dashboards
-                and reports for operational and public policy teams. Here I share some
-                aggregated outputs and personal projects.
-            </p>
-            <div class="projects-grid">
-
-                <!-- Proyecto 1: Tablero Jovenes con Oportunidades -->
-                <article class="project-card">
-                    <div class="project-image project-image-link">
-                        <a href="https://tablero-jco-fmeyctbuhogjs5tgttm2iw.streamlit.app/" target="_blank" rel="noopener">
-                            <img src="tablero-jco-preview.png" alt="Youth programs prioritization dashboard preview">
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3 data-i18n="project1-title">Prioritization dashboard for youth programs in Bogota</h3>
-                        <p data-i18n="project1-desc">Developed to support social program allocation at the District Secretariat
-                        of Social Integration. Identifies localities with the highest concentration of
-                        vulnerable youth based on SISBEN 2024 data and compares needs across territories.</p>
-                        <div class="project-tags">
-                            <span>Streamlit</span>
-                            <span>Python</span>
-                            <span>SDIS</span>
-                            <span data-i18n="tag-youth">Youth</span>
-                        </div>
-                        <div class="project-links-row">
-                            <a href="https://tablero-jco-fmeyctbuhogjs5tgttm2iw.streamlit.app/"
-                               target="_blank" rel="noopener" class="project-link primary">
-                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project1-link-app">View app</span>
-                            </a>
-                            <a href="https://github.com/CarolinaHernandez2019/tablero-jco"
-                               target="_blank" rel="noopener" class="project-link">
-                                <i class="fab fa-github"></i> <span data-i18n="project1-link-code">Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Proyecto 2: Monitoreo de noticias de juventud -->
-                <article class="project-card">
-                    <div class="project-image project-image-link">
-                        <a href="https://noticiasjuventudcolombia.streamlit.app/" target="_blank" rel="noopener">
-                            <img src="monitor-noticias-preview.png" alt="Youth news monitoring dashboard preview">
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3 data-i18n="project2-title">Youth news monitoring</h3>
-                        <p data-i18n="project2-desc">Tool for tracking how youth is covered in Colombian media. Automates
-                        daily news collection, categorizes mentions by topic, and generates visualizations
-                        to identify trends in media coverage.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Scraping</span>
-                            <span>Dashboard</span>
-                            <span data-i18n="tag-youth">Youth</span>
-                        </div>
-                        <div class="project-links-row">
-                            <a href="https://noticiasjuventudcolombia.streamlit.app/"
-                               target="_blank" rel="noopener" class="project-link primary">
-                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project2-link-app">View app</span>
-                            </a>
-                            <a href="https://github.com/CarolinaHernandez2019/-monitoreo-noticias-juventud"
-                               target="_blank" rel="noopener" class="project-link">
-                                <i class="fab fa-github"></i> <span data-i18n="project2-link-code">Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Proyecto 3: Mapa de escuelas de Bogotá -->
-                <article class="project-card">
-                    <div class="project-image project-image-link">
-                        <a href="https://carolinahernandez2019.github.io/mapa-escuelas-bogota/" target="_blank" rel="noopener">
-                            <img src="mapa-escuelas-preview.png" alt="Mapa interactivo de escuelas de Bogotá preview">
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3 data-i18n="project3-title">Interactive map of schools in Bogota</h3>
-                        <p data-i18n="project3-desc">Personal project exploring geospatial visualization of Bogota's 3,300+ schools.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>D3.js</span>
-                            <span data-i18n="tag-education">Education</span>
-                            <span data-i18n="tag-personal">Personal</span>
-                        </div>
-                        <div class="project-links-row">
-                            <a href="https://carolinahernandez2019.github.io/mapa-escuelas-bogota/"
-                               target="_blank" rel="noopener" class="project-link primary">
-                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project3-link-app">View app</span>
-                            </a>
-                            <a href="https://github.com/CarolinaHernandez2019/mapa-escuelas-bogota"
-                               target="_blank" rel="noopener" class="project-link">
-                                <i class="fab fa-github"></i> <span data-i18n="project3-link-code">Code</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER ========== -->
     <footer class="footer">
         <div class="section-container">
             <p data-i18n="footer-text">&copy; 2026 Jenny Carolina Hernández Cardozo &middot; Data Stuff</p>
         </div>
     </footer>
 
-    <script src="traducciones-idioma.js?v=8"></script>
-    <script src="particles.js?v=5"></script>
-    <script src="script.js?v=6"></script>
+    <script src="traducciones-idioma.js?v=9"></script>
+    <script src="particles.js?v=6"></script>
+    <script src="script.js?v=8"></script>
 </body>
 </html>

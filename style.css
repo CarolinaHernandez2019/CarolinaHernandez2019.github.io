@@ -20,21 +20,21 @@
 }
 
 /* --- Variables CSS: colores y fuentes del sitio --- */
-/* Tema claro minimalista — paleta lilac */
+/* Tema claro minimalista — blanco y negro */
 :root {
-    --color-bg: #faf8fb;
-    --color-surface: #f0edf4;
-    --color-text: #2d2438;
-    --color-text-secondary: #6b5f78;
-    --color-accent: #9b7aa8;
-    --color-accent-hover: #7d5e8a;
-    --color-accent-light: #ede6f0;
-    --color-border: #ddd4e4;
+    --color-bg: #ffffff;
+    --color-surface: #f5f5f5;
+    --color-text: #1a1a1a;
+    --color-text-secondary: #666666;
+    --color-accent: #333333;
+    --color-accent-hover: #111111;
+    --color-accent-light: #eeeeee;
+    --color-border: #e0e0e0;
     --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-    --shadow-sm: 0 1px 3px rgba(45, 36, 56, 0.08);
-    --shadow-md: 0 4px 12px rgba(45, 36, 56, 0.1);
-    --shadow-lg: 0 8px 30px rgba(45, 36, 56, 0.12);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.10);
     --radius: 8px;
     --max-width: 900px;
     --transition: 0.3s ease;
@@ -90,6 +90,13 @@ body {
 
 /* Cuando se hace scroll, la barra gana sombra */
 .navbar.scrolled {
+    box-shadow: var(--shadow-sm);
+}
+
+/* Paginas interiores: navbar siempre visible con fondo solido */
+.navbar.navbar-solid {
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
 }
 
@@ -232,7 +239,7 @@ body {
     height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 0 6px var(--color-bg), 0 16px 48px rgba(45, 36, 56, 0.1);
+    box-shadow: 0 0 0 6px var(--color-bg), 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 /* --- Foto de perfil (usada en seccion Sobre mi) --- */
@@ -251,7 +258,7 @@ body {
 
 /* Placeholder que se muestra mientras no haya foto */
 .image-placeholder {
-    background: linear-gradient(135deg, #ddd4e4 0%, #9b7aa8 100%);
+    background: linear-gradient(135deg, #e0e0e0 0%, #999999 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,12 +291,36 @@ body {
 }
 
 .hero-name {
-    font-family: var(--font-heading);
-    font-size: clamp(3rem, 7vw, 4.5rem);
+    font-family: 'Caveat', cursive;
+    font-size: clamp(3.5rem, 8vw, 5rem);
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 20px;
     color: var(--color-text);
+}
+
+/* Lema debajo de los iconos */
+.hero-lema {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 420px;
+    margin-top: 32px;
+    font-style: italic;
+}
+
+/* Highlight estilo resaltador */
+.highlight {
+    background: linear-gradient(to top, #b8e6b0 0%, #b8e6b0 40%, transparent 40%);
+    padding: 0 0.1em;
+}
+
+/* Highlight naranja zorrito para el nombre */
+.highlight-name {
+    background: #ffcba4;
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 
 .hero-title {
@@ -370,6 +401,11 @@ body {
     letter-spacing: 0.08em;
 }
 
+/* Titulo dentro de secciones oscuras */
+.about-me .subsection-title {
+    color: #999999;
+}
+
 /* --- Tags interactivos de expertise --- */
 /* Al hacer clic aparece la descripcion debajo */
 .skill-tags {
@@ -382,14 +418,14 @@ body {
     padding: 10px 20px;
     border-radius: 24px;
     border: none;
-    background: var(--tag-color);
-    color: #1a2e3b;
+    background: #ffffff;
+    color: #1a1a1a;
     font-family: var(--font-body);
     font-size: 0.88rem;
     font-weight: 500;
     cursor: pointer;
     transition: all var(--transition);
-    box-shadow: var(--shadow-sm);
+    box-shadow: none;
 }
 
 .skill-tag:hover {
@@ -399,8 +435,8 @@ body {
 
 .skill-tag.active {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    outline: 2px solid var(--color-text);
+    box-shadow: none;
+    outline: 2px solid #ffffff;
     outline-offset: 2px;
 }
 
@@ -422,12 +458,12 @@ body {
 .skill-desc p {
     font-size: 0.92rem;
     line-height: 1.7;
-    color: var(--color-text-secondary);
-    padding: 16px 20px;
-    background: var(--color-surface);
-    border-radius: var(--radius);
-    border-left: 3px solid var(--color-accent);
-    box-shadow: var(--shadow-sm);
+    color: #ffffff;
+    padding: 16px 0;
+    background: none;
+    border-radius: 0;
+    border-left: none;
+    box-shadow: none;
 }
 
 @keyframes fadeIn {
@@ -447,23 +483,23 @@ body {
     align-items: center;
     gap: 10px;
     padding: 14px 16px;
-    background: var(--color-surface);
+    background: var(--color-bg);
     border-radius: var(--radius);
     border: 1px solid var(--color-border);
     font-size: 0.88rem;
     font-weight: 500;
+    color: var(--color-text);
     transition: all var(--transition);
 }
 
 .tool-item:hover {
     border-color: var(--color-accent);
     transform: translateY(-1px);
-    box-shadow: var(--shadow-sm);
 }
 
 .tool-item i {
     font-size: 1.3rem;
-    color: var(--color-accent);
+    color: var(--color-text-secondary);
 }
 
 /* ========== HERRAMIENTAS (seccion separada) ========== */
@@ -474,11 +510,17 @@ body {
 /* ========== PROYECTOS ========== */
 .projects {
     padding: 60px 0;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.projects .section-title {
+    color: #ffffff;
 }
 
 .projects-intro {
     text-align: left;
-    color: var(--color-muted);
+    color: #999999;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 32px;
@@ -487,29 +529,31 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 32px;
 }
 
-/* --- Tarjeta de proyecto --- */
+/* --- Tarjeta de proyecto: layout horizontal --- */
 .project-card {
-    background: var(--color-surface);
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 1px solid var(--color-border);
-    transition: all var(--transition);
-    box-shadow: var(--shadow-sm);
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    background: transparent;
+    border: none;
+    overflow: visible;
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: none;
 }
 
-/* Imagen o placeholder del proyecto */
+/* Imagen del proyecto a la izquierda */
 .project-image {
-    height: 160px;
+    width: 280px;
+    height: 180px;
+    flex-shrink: 0;
     overflow: hidden;
+    border-radius: var(--radius);
 }
 
 .project-image img {
@@ -530,30 +574,31 @@ body {
 
 /* Cada tarjeta tiene un degradado diferente */
 .project-card:nth-child(1) .project-placeholder {
-    background: linear-gradient(135deg, #ddd4e4, #9b7aa8);
+    background: linear-gradient(135deg, #d0d0d0, #888888);
 }
 .project-card:nth-child(2) .project-placeholder {
-    background: linear-gradient(135deg, #e6dced, #a886b5);
+    background: linear-gradient(135deg, #d8d8d8, #999999);
 }
 .project-card:nth-child(3) .project-placeholder {
-    background: linear-gradient(135deg, #ede6f0, #b898c4);
+    background: linear-gradient(135deg, #e0e0e0, #aaaaaa);
 }
 
 .project-content {
-    padding: 20px;
+    padding: 4px 0;
+    flex: 1;
 }
 
 .project-content h3 {
     font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 8px;
-    color: var(--color-text);
+    color: #ffffff;
 }
 
 .project-content p {
     font-size: 0.88rem;
     line-height: 1.6;
-    color: var(--color-text-secondary);
+    color: #bbbbbb;
     margin-bottom: 14px;
 }
 
@@ -567,11 +612,11 @@ body {
 
 .project-tags span {
     padding: 4px 10px;
-    background: var(--color-bg);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--color-text-secondary);
+    color: #cccccc;
 }
 
 /* Fila con dos links: app en vivo + codigo */
@@ -585,7 +630,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: var(--color-accent);
+    color: #cccccc;
     text-decoration: none;
     font-size: 0.88rem;
     font-weight: 500;
@@ -593,21 +638,20 @@ body {
 }
 
 .project-link:hover {
-    gap: 10px;
+    color: #ffffff;
 }
 
 /* Link principal (app en vivo) con fondo */
 .project-link.primary {
-    background: var(--color-accent);
-    color: white;
+    background: #ffffff;
+    color: #1a1a1a;
     padding: 6px 14px;
     border-radius: 16px;
     gap: 6px;
 }
 
 .project-link.primary:hover {
-    gap: 8px;
-    box-shadow: var(--shadow-sm);
+    background: #e0e0e0;
 }
 
 /* Imagen del proyecto clickeable */
@@ -637,36 +681,45 @@ body {
 /* Seccion con publicaciones seleccionadas como tarjetas clickeables */
 .publications {
     padding: 60px 0;
-    background: var(--color-surface);
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.publications .section-title {
+    color: #ffffff;
 }
 
 .publications-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
 }
 
 /* Cada tarjeta es un enlace clickeable a la publicacion */
 .publication-card {
-    background: var(--color-surface);
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 1px solid var(--color-border);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: transparent;
+    border: none;
+    overflow: visible;
     transition: all var(--transition);
-    box-shadow: var(--shadow-sm);
+    box-shadow: none;
     text-decoration: none;
     color: inherit;
 }
 
 .publication-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    opacity: 0.85;
 }
 
 /* Imagen de portada de la publicacion */
 .publication-image {
-    height: 150px;
+    width: 180px;
+    height: 120px;
+    flex-shrink: 0;
     overflow: hidden;
+    border-radius: 6px;
 }
 
 .publication-image img {
@@ -681,7 +734,8 @@ body {
 }
 
 .publication-info {
-    padding: 12px;
+    padding: 0;
+    flex: 1;
 }
 
 .publication-info h3 {
@@ -689,20 +743,20 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 4px;
-    color: var(--color-text);
+    color: #ffffff;
 }
 
 /* Organizacion y año de la publicacion */
 .publication-meta {
     font-size: 0.82rem;
-    color: var(--color-text-secondary);
+    color: #999999;
 }
 
 /* Indicador de idioma disponible */
 .publication-lang {
     font-size: 0.72rem;
     font-style: italic;
-    color: var(--color-text-secondary);
+    color: #999999;
     margin-top: 4px;
     opacity: 0.75;
 }
@@ -714,7 +768,7 @@ body {
 }
 
 .publications-more a {
-    color: var(--color-accent);
+    color: #cccccc;
     text-decoration: none;
     font-size: 0.92rem;
     font-weight: 500;
@@ -723,6 +777,42 @@ body {
 
 .publications-more a:hover {
     opacity: 0.8;
+}
+
+/* ========== LISTA COMPLETA DE PUBLICACIONES (APA) ========== */
+.pub-list {
+    padding: 60px 0;
+    background: var(--color-bg);
+}
+
+.apa-list {
+    list-style: none;
+    padding: 0;
+}
+
+.apa-list li {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    padding: 20px 0;
+}
+
+.apa-list li + li {
+    border-top: 1px solid var(--color-border);
+}
+
+.apa-list li em {
+    font-style: italic;
+}
+
+.apa-list li a {
+    color: var(--color-accent);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.apa-list li a:hover {
+    text-decoration: underline;
 }
 
 /* --- Boton de descarga de CV --- */
@@ -747,10 +837,11 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* ========== SOBRE MI ========== */
+/* ========== SOBRE MI / TOPICS ========== */
 .about-me {
     padding: 60px 0;
-    background: var(--color-surface);
+    background: #1a1a1a;
+    color: #ffffff;
 }
 
 /* Tarjeta con foto a la izquierda y texto a la derecha */
@@ -880,6 +971,61 @@ body {
     color: var(--color-accent);
 }
 
+/* ========== NAVEGACION A PAGINAS (botones en index) ========== */
+.page-nav {
+    padding: 48px 0 64px;
+}
+
+.page-nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.page-nav-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 28px;
+    background: #1a1a1a;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: #ffffff;
+    transition: all var(--transition);
+}
+
+.page-nav-card:hover {
+    background: #333333;
+}
+
+.page-nav-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.page-nav-card p {
+    font-size: 0.85rem;
+    color: #999999;
+}
+
+.page-nav-card .arrow {
+    font-size: 1.2rem;
+    color: #999999;
+    transition: transform var(--transition), color var(--transition);
+}
+
+.page-nav-card:hover .arrow {
+    transform: translateX(4px);
+    color: #ffffff;
+}
+
+/* Paginas interiores — padding superior para compensar navbar fijo */
+.page-section-first {
+    padding-top: 100px;
+}
+
 /* ========== FOOTER ========== */
 .footer {
     padding: 24px 0;
@@ -985,13 +1131,28 @@ body {
         padding: 8px 16px;
     }
 
-    /* Proyectos: una columna */
-    .projects-grid {
-        grid-template-columns: 1fr;
+    /* Proyectos: vertical en movil */
+    .project-card {
+        flex-direction: column;
     }
 
-    /* Publicaciones: una columna en movil */
-    .publications-grid {
+    .project-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    /* Publicaciones: vertical en movil */
+    .publication-card {
+        flex-direction: column;
+    }
+
+    .publication-image {
+        width: 100%;
+        height: 160px;
+    }
+
+    /* Nav cards: una columna en movil */
+    .page-nav-grid {
         grid-template-columns: 1fr;
     }
 

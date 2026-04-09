@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-attr="page-title-about">About | Carolina Hernández Cardozo</title>
+    <meta name="description" content="Topics, tools and recent projects by Jenny Carolina Hernández Cardozo." data-i18n-meta="meta-description">
+    <meta name="keywords" content="Jenny Carolina Hernández Cardozo, Carolina Hernández economista, análisis de datos Colombia, datos sociales, evaluación de políticas públicas, demografía Colombia, visualización de datos">
+    <link rel="canonical" href="https://carolinahernandez2019.github.io/about.html">
+    <meta property="og:title" content="Jenny Carolina Hernández Cardozo | Economista y demógrafa">
+    <meta property="og:description" content="Economista y demógrafa especializada en análisis de datos sociales, evaluación de políticas públicas y visualización de datos en Colombia.">
+    <meta property="og:url" content="https://carolinahernandez2019.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <link rel="stylesheet" href="style.css?v=20">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-solid" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" data-i18n="nav-inicio">Home</a></li>
+                <li><a href="about.html" data-i18n="nav-proyectos">Projects</a></li>
+                <li><a href="publications.html" data-i18n="nav-publicaciones">Publications</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                ES
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== TEMAS ========== -->
+    <section class="about-me page-section-first" id="about">
+        <div class="section-container">
+            <h2 class="subsection-title" data-i18n="section-temas">Topics</h2>
+            <div class="skill-tags">
+                <button class="skill-tag" data-skill="policy" style="--tag-color: #eeeeee;" data-i18n="skill-policy">
+                    Social data analysis
+                </button>
+                <button class="skill-tag" data-skill="data-viz" style="--tag-color: #eeeeee;" data-i18n="skill-dataviz">
+                    Data visualization
+                </button>
+                <button class="skill-tag" data-skill="monitoring" style="--tag-color: #eeeeee;" data-i18n="skill-monitoring">
+                    Public policy evaluation
+                </button>
+            </div>
+            <div class="skill-descriptions">
+                <div class="skill-desc" id="desc-policy">
+                    <p data-i18n="desc-policy">Research experience in labor markets, youth, education, and migration.
+                    Working with household surveys from Colombia and Latin America.</p>
+                </div>
+                <div class="skill-desc" id="desc-data-viz">
+                    <p data-i18n="desc-dataviz">For technical and non-technical audiences. Publication-ready visualizations
+                    in ggplot2 and Plotly. Currently studying D3.js to create interactive web visualizations.</p>
+                </div>
+                <div class="skill-desc" id="desc-monitoring">
+                    <p data-i18n="desc-monitoring">Experience in youth and education policy evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HERRAMIENTAS ========== -->
+    <section class="tools-section fade-in" id="tools">
+        <div class="section-container">
+            <h2 class="subsection-title" data-i18n="subsection-herramientas">Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-item"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="tool-item"><i class="fab fa-r-project"></i><span>R</span></div>
+                <div class="tool-item"><i class="fas fa-chart-line"></i><span>Stata</span></div>
+                <div class="tool-item"><i class="fas fa-chart-line"></i><span>SAS</span></div>
+                <div class="tool-item"><i class="fas fa-table-columns"></i><span>Streamlit</span></div>
+                <div class="tool-item"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+                <div class="tool-item"><i class="fas fa-map-location-dot"></i><span>QGIS</span></div>
+                <div class="tool-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="tool-item"><i class="fas fa-paintbrush"></i><span>Illustrator</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROYECTOS ========== -->
+    <section class="projects fade-in" id="projects">
+        <div class="section-container">
+            <h2 class="section-title" data-i18n="section-proyectos">Recent projects</h2>
+            <p class="projects-intro" data-i18n="hero-intro-projects">
+                I currently work with youth social data in Bogota, designing dashboards
+                and reports for operational and public policy teams. Here I share some
+                aggregated outputs and personal projects.
+            </p>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-image project-image-link">
+                        <a href="https://tablero-jco-fmeyctbuhogjs5tgttm2iw.streamlit.app/" target="_blank" rel="noopener">
+                            <img src="tablero-jco-preview.png" alt="Prioritization dashboard for youth programs in Bogota preview">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project1-title">Prioritization dashboard for youth programs in Bogota</h3>
+                        <p data-i18n="project1-desc">Developed to support social program allocation at the District Secretariat of Social Integration. Identifies localities with the highest concentration of vulnerable youth based on SISBEN 2024 data and compares needs across territories.</p>
+                        <div class="project-tags">
+                            <span>Streamlit</span><span>Python</span><span>SDIS</span><span data-i18n="tag-youth">Youth</span>
+                        </div>
+                        <div class="project-links-row">
+                            <a href="https://tablero-jco-fmeyctbuhogjs5tgttm2iw.streamlit.app/"
+                               target="_blank" rel="noopener" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project1-link-app">View app</span>
+                            </a>
+                            <a href="https://github.com/CarolinaHernandez2019/tablero-jco"
+                               target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i> <span data-i18n="project1-link-code">Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image project-image-link">
+                        <a href="https://noticiasjuventudcolombia.streamlit.app/" target="_blank" rel="noopener">
+                            <img src="monitor-noticias-preview.png" alt="Youth news monitoring preview">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project2-title">Youth news monitoring</h3>
+                        <p data-i18n="project2-desc">Tool for tracking how youth is covered in Colombian media. Automates daily news collection, categorizes mentions by topic, and generates visualizations to identify trends in media coverage.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Scraping</span><span>Dashboard</span><span data-i18n="tag-youth">Youth</span>
+                        </div>
+                        <div class="project-links-row">
+                            <a href="https://noticiasjuventudcolombia.streamlit.app/"
+                               target="_blank" rel="noopener" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project2-link-app">View app</span>
+                            </a>
+                            <a href="https://github.com/CarolinaHernandez2019/-monitoreo-noticias-juventud"
+                               target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i> <span data-i18n="project2-link-code">Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image project-image-link">
+                        <a href="https://carolinahernandez2019.github.io/mapa-escuelas-bogota/" target="_blank" rel="noopener">
+                            <img src="mapa-escuelas-preview.png" alt="Interactive map of schools in Bogota preview">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project3-title">Interactive map of schools in Bogota</h3>
+                        <p data-i18n="project3-desc">Personal project exploring geospatial visualization of Bogota's 3,300+ schools.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>D3.js</span><span data-i18n="tag-education">Education</span><span data-i18n="tag-personal">Personal</span>
+                        </div>
+                        <div class="project-links-row">
+                            <a href="https://carolinahernandez2019.github.io/mapa-escuelas-bogota/"
+                               target="_blank" rel="noopener" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="project3-link-app">View app</span>
+                            </a>
+                            <a href="https://github.com/CarolinaHernandez2019/mapa-escuelas-bogota"
+                               target="_blank" rel="noopener" class="project-link">
+                                <i class="fab fa-github"></i> <span data-i18n="project3-link-code">Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p data-i18n="footer-text">&copy; 2026 Jenny Carolina Hernández Cardozo &middot; Data Stuff</p>
+        </div>
+    </footer>
+
+    <script src="traducciones-idioma.js?v=9"></script>
+    <script src="script.js?v=8"></script>
+</body>
+</html>

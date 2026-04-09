@@ -127,9 +127,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Actualiza el titulo de la pagina (pestaña del navegador)
-        if (traducciones['page-title'] && traducciones['page-title'][lang]) {
-            document.title = traducciones['page-title'][lang];
+        // Actualiza el titulo de la pagina (busca clave especifica de la pagina)
+        const titleEl = document.querySelector('[data-i18n-attr]');
+        if (titleEl) {
+            const titleKey = titleEl.getAttribute('data-i18n-attr');
+            if (traducciones[titleKey] && traducciones[titleKey][lang]) {
+                document.title = traducciones[titleKey][lang];
+            }
         }
 
         // Actualiza la meta description (para SEO)
