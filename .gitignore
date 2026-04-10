@@ -1,20 +1,10 @@
-# Archivos personales que no deben publicarse
-Hernandez_Cardozo_CV_2026.pdf
+# Carpetas locales (no se publican)
+versiones/
+docs/
 Bios/
-
-# Copias versionadas (respaldos locales, no se publican)
-*_v[0-9].*
-*_v[0-9][0-9].*
-
-# Guias y documentos internos
-guia-*.docx
-
-# Notas locales (Obsidian)
 Notes/
-
-# Generador (solo local, no se publica)
 scripts/
 datos/
 
-# Paginas obsoletas
+# Páginas obsoletas
 projects.html

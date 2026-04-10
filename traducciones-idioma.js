@@ -253,6 +253,14 @@ const traducciones = {
         es: "Disponible en español",
         en: "Available in Spanish"
     },
+    "pub-tesis-title": {
+        es: "Venezolanos en Colombia: bienestar y percepción en la inserción en la sociedad receptora en regiones fronterizas y no fronterizas (2013-2018)",
+        en: "Venezuelans in Colombia: well-being and perception of integration in host society in border and non-border regions (2013-2018)"
+    },
+    "pub-tesis-lang": {
+        es: "Disponible en español",
+        en: "Available in Spanish"
+    },
     "pub-exclusion-title": {
         es: "Factores asociados a la exclusión educativa y laboral de los adolescentes colombianos",
         en: "Factors associated with educational and labor exclusion of Colombian adolescents"
