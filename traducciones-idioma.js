@@ -50,8 +50,8 @@ const traducciones = {
         en: "Data Stuff"
     },
     "hero-lema": {
-        es: "Los datos sociales no son solo números, representan personas, vidas e historias. Trabajo teniendo este respeto y responsabilidad como centro.",
-        en: "Social data is not just numbers, it's people, lives, and stories. I work with that respect and responsibility at the center."
+        es: "Los datos sociales representan personas, vidas e historias. Trabajo con ese respeto como centro.",
+        en: "Social data represents people, lives, and stories. I work with that respect at the center."
     },
     "hero-bio": {
         es: "Trabajo en análisis de datos sociales. Mi meta es convertir datos en narrativas que trasciendan los números, ayudando a desarrollar soluciones significativas y de impacto. Enfocada este 2026 en visualización de datos.",
