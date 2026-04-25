@@ -113,6 +113,10 @@ const traducciones = {
         es: "Personal",
         en: "Personal"
     },
+    "tag-course": {
+        es: "Curso",
+        en: "Course"
+    },
     "pub-list-title": {
         es: "Lista",
         en: "List"
@@ -306,6 +310,22 @@ const traducciones = {
         en: "View app"
     },
     "project2-link-code": {
+        es: "Código",
+        en: "Code"
+    },
+    "project-d3-course-title": {
+        es: "Notebook del curso D3 y React",
+        en: "D3 and React course notebook"
+    },
+    "project-d3-course-desc": {
+        es: "Aprendiendo D3 y React, el estándar de oro para visualizaciones de datos interactivas. Bitácora pública con proyectos del curso, notas de aprendizaje y variaciones propias.",
+        en: "Learning D3 and React, the gold standard for interactive data visualization. Public notebook with course projects, learning notes, and personal variations."
+    },
+    "project-d3-course-link-app": {
+        es: "Ver notebook",
+        en: "View notebook"
+    },
+    "project-d3-course-link-code": {
         es: "Código",
         en: "Code"
     },
