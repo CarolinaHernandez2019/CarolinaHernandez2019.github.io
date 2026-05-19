@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .title { font: 700 19px 'Montserrat', sans-serif; fill: #1a1a1a; }
+      .subtitle { font: 500 12px 'Montserrat', sans-serif; fill: #666666; letter-spacing: 0.04em; text-transform: uppercase; }
+      .country { font: 500 13px 'Montserrat', sans-serif; fill: #1a1a1a; }
+      .value { font: 600 12px 'Montserrat', sans-serif; fill: #1a1a1a; font-variant-numeric: tabular-nums; }
+      .value-muted { font: 500 12px 'Montserrat', sans-serif; fill: #999999; font-variant-numeric: tabular-nums; }
+      .axis { font: 500 11px 'Montserrat', sans-serif; fill: #999999; font-variant-numeric: tabular-nums; }
+      .footer { font: 400 11px 'Montserrat', sans-serif; fill: #888888; }
+      .footer-em { font-style: italic; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#ffffff"/>
+
+  <text x="40" y="42" class="title">Tutorías remotas en América Latina</text>
+  <text x="40" y="64" class="subtitle">Efecto sobre aprendizaje en matemáticas (σ)</text>
+
+  <line x1="135" y1="92" x2="135" y2="318" stroke="#cccccc" stroke-width="1"/>
+  <text x="135" y="332" class="axis" text-anchor="middle">0</text>
+  <text x="135" y="84" class="axis" text-anchor="middle" fill="#bbbbbb" font-size="10">↑ mayor efecto</text>
+
+  <text x="125" y="106" class="country" text-anchor="end">Paraguay</text>
+  <rect x="135" y="96" width="240" height="14" fill="#b8e6b0"/>
+  <text x="383" y="106" class="value">+0,58</text>
+
+  <text x="125" y="136" class="country" text-anchor="end">Brasil</text>
+  <rect x="135" y="126" width="225" height="14" fill="#b8e6b0"/>
+  <text x="368" y="136" class="value">+0,54</text>
+
+  <text x="125" y="166" class="country" text-anchor="end">México</text>
+  <rect x="135" y="156" width="85" height="14" fill="#b8e6b0"/>
+  <text x="228" y="166" class="value">+0,21</text>
+
+  <text x="125" y="196" class="country" text-anchor="end">El Salvador</text>
+  <rect x="135" y="186" width="51" height="14" fill="#b8e6b0"/>
+  <text x="194" y="196" class="value">+0,12</text>
+
+  <text x="125" y="226" class="country" text-anchor="end">Guatemala</text>
+  <rect x="135" y="216" width="26" height="14" fill="#e8e8e8"/>
+  <text x="169" y="226" class="value-muted">+0,06</text>
+
+  <text x="125" y="256" class="country" text-anchor="end">Perú</text>
+  <rect x="135" y="246" width="8" height="14" fill="#e8e8e8"/>
+  <text x="151" y="256" class="value-muted">+0,02</text>
+
+  <text x="125" y="286" class="country" text-anchor="end">Argentina</text>
+  <rect x="135" y="276" width="5" height="14" fill="#e8e8e8"/>
+  <text x="148" y="286" class="value-muted">+0,01</text>
+
+  <line x1="40" y1="350" x2="560" y2="350" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="40" y="372" class="footer">13.199 estudiantes · 7 países · diseños experimentales y cuasi-experimentales</text>
+  <text x="40" y="389" class="footer footer-em">Zoido et al. (2023) · Banco Interamericano de Desarrollo</text>
+</svg>

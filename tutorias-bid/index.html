@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorías remotas en América Latina — Evaluación de impacto</title>
+<meta name="description" content="Mapa interactivo de la evaluación de impacto de programas de tutorías remotas en siete países de América Latina, realizada en el Banco Interamericano de Desarrollo.">
+<link rel="canonical" href="https://carolinahernandez2019.github.io/tutorias-bid/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #1a1a1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.topbar {
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.topbar a:hover { color: #b8e6b0; }
+
+.topbar .brand {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+header.hero {
+  padding: 3rem 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 0.8rem;
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.8rem;
+}
+
+header h1 .highlight {
+  background: #b8e6b0;
+  color: #1a1a1a;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+header .subtitle {
+  font-size: 1.05rem;
+  color: #bbbbbb;
+  max-width: 720px;
+}
+
+main.layout {
+  max-width: 1200px;
+  margin: 1rem auto 4rem;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.map-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.78rem;
+  color: #555555;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+aside.info {
+  font-size: 0.93rem;
+  color: #cccccc;
+}
+
+aside.info h2 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 0.8rem;
+  margin-top: 1.8rem;
+}
+
+aside.info h2:first-child { margin-top: 0; }
+
+aside.info p {
+  margin-bottom: 1rem;
+  color: #bbbbbb;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  margin-bottom: 0.6rem;
+}
+
+.results-table thead th {
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888888;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.results-table thead th:nth-child(2),
+.results-table thead th:nth-child(3) {
+  text-align: right;
+}
+
+.results-table tbody td {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.results-table tbody td:first-child {
+  font-weight: 500;
+}
+
+.results-table tbody td:nth-child(2),
+.results-table tbody td:nth-child(3) {
+  text-align: right;
+  color: #bbbbbb;
+}
+
+.results-table .total-row td {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: none;
+  padding-top: 0.7rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.results-table .sig {
+  color: #b8e6b0;
+  font-weight: 600;
+}
+
+.footnote {
+  font-size: 0.74rem;
+  color: #777777;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+aside.info .meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.85rem;
+}
+
+aside.info .meta-row span:first-child { color: #999999; }
+aside.info .meta-row span:last-child { color: #ffffff; font-weight: 500; }
+
+.citation {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: #999999;
+  line-height: 1.6;
+}
+
+.citation a {
+  color: #b8e6b0;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.citation a:hover { border-bottom-color: #b8e6b0; }
+
+footer.foot {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #666666;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 900px) {
+  main.layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header.hero, main.layout { padding-left: 1.2rem; padding-right: 1.2rem; }
+  aside.info ul { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">Carolina Hernández · Cosas de Datos</span>
+  <a href="../about.html">&larr; Volver al portafolio</a>
+</div>
+
+<header class="hero">
+  <p class="eyebrow">Banco Interamericano de Desarrollo · 2021-2024</p>
+  <h1>Tutorías remotas en <span class="highlight">América Latina</span></h1>
+  <p class="subtitle">Evaluación de impacto de programas de tutorías remotas implementados en siete países de la región.</p>
+</header>
+
+<main class="layout">
+
+  <div class="map-card">
+    <svg id="map" viewBox="0 0 600 700" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="tooltip" id="tooltip"></div>
+    <div class="map-legend">
+      <div class="legend-item"><span class="legend-swatch" style="background: #b8e6b0;"></span>Países del estudio</div>
+      <div class="legend-item"><span class="legend-swatch" style="background: #e8e8e8;"></span>Resto de la región</div>
+    </div>
+  </div>
+
+  <aside class="info">
+    <h2>El estudio</h2>
+    <p>Evaluación multipaís de programas de tutorías remotas dirigidos a acelerar aprendizajes en matemáticas. Combina <strong>diseños experimentales y cuasi-experimentales</strong> según el país: aleatorización individual en unos casos, aleatorización por colegios en otros (como Perú), y en México dos ensayos en territorios distintos, uno analizado con diferencias en diferencias. Muestra total: <strong>13.199 estudiantes</strong> en siete países.</p>
+
+    <h2>Países y resultados</h2>
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>País</th>
+          <th>Muestra</th>
+          <th>Efecto (σ)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>El Salvador</td><td>3.440</td><td><span class="sig">+0,12</span></td></tr>
+        <tr><td>México</td><td>2.718</td><td><span class="sig">+0,21</span></td></tr>
+        <tr><td>Argentina</td><td>1.204</td><td>+0,01</td></tr>
+        <tr><td>Guatemala</td><td>1.315</td><td>+0,06</td></tr>
+        <tr><td>Brasil</td><td>483</td><td><span class="sig">+0,54</span></td></tr>
+        <tr><td>Paraguay</td><td>1.793</td><td><span class="sig">+0,58</span></td></tr>
+        <tr><td>Perú</td><td>2.246</td><td>+0,02</td></tr>
+        <tr class="total-row"><td>Total</td><td>13.199</td><td><span class="sig">+0,19</span></td></tr>
+      </tbody>
+    </table>
+    <p class="footnote">Efectos en desviaciones estándar sobre el puntaje estandarizado en matemáticas. Estimados con la metodología propia de cada país (ITT en los diseños experimentales, efecto promedio del tratamiento en los cuasi-experimentales). Los valores en verde tienen intervalo de confianza al 95% que no incluye cero.</p>
+
+    <h2>Diseño metodológico</h2>
+    <div class="meta-row"><span>Enfoque</span><span>Evaluación multipaís con diseños mixtos</span></div>
+    <div class="meta-row"><span>Resultado</span><span>Aprendizaje en matemáticas</span></div>
+    <div class="meta-row"><span>Estimadores</span><span>ITT, ToT (IV/2SLS) y DiD</span></div>
+    <div class="meta-row"><span>Aleatorización</span><span>Individual o por colegios según el país</span></div>
+
+    <h2>Mi rol</h2>
+    <p>Acompañamiento en análisis y monitoreo de datos junto con los implementadores de cada país. Producción de tablas y figuras para la publicación.</p>
+
+    <h2>Publicación</h2>
+    <p class="citation">
+      Zoido, P., Albornoz, F., Prieto, A., Almeyda, G., <strong>Hernández Cardozo, J. C.</strong>, Oubiña, V. y Calderón, M. (Noviembre 2023). <em>Multiplying Learning: Remote Tutoring to Enhance Schooling</em>. Banco Interamericano de Desarrollo. <a href="https://doi.org/10.18235/0005309" target="_blank" rel="noopener">DOI: 10.18235/0005309</a>
+    </p>
+  </aside>
+
+</main>
+
+<footer class="foot">
+  <p>&copy; 2026 Jenny Carolina Hernández Cardozo · Cosas de Datos</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script>
+const studyCountries = {
+  32: "Argentina",
+  76: "Brasil",
+  222: "El Salvador",
+  320: "Guatemala",
+  484: "México",
+  600: "Paraguay",
+  604: "Perú"
+};
+
+const svg = d3.select("#map");
+const width = 600;
+const height = 700;
+const tooltip = d3.select("#tooltip");
+
+const projection = d3.geoMercator()
+  .center([-70, -10])
+  .scale(420)
+  .translate([width / 2, height / 2]);
+
+const path = d3.geoPath(projection);
+
+fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json")
+  .then(r => r.json())
+  .then(world => {
+    const countries = topojson.feature(world, world.objects.countries).features;
+
+    svg.append("g")
+      .selectAll("path")
+      .data(countries)
+      .join("path")
+      .attr("d", path)
+      .attr("fill", d => studyCountries[+d.id] ? "#b8e6b0" : "#e8e8e8")
+      .attr("stroke", "#ffffff")
+      .attr("stroke-width", 0.6)
+      .style("cursor", d => studyCountries[+d.id] ? "default" : "default")
+      .on("mouseover", function (event, d) {
+        d3.select(this)
+          .attr("fill", studyCountries[+d.id] ? "#9ed98e" : "#d0d0d0");
+        const name = studyCountries[+d.id] || d.properties.name;
+        const inStudy = studyCountries[+d.id] ? "Parte del estudio" : "No incluido";
+        tooltip
+          .html(`<strong>${name}</strong><br><span style="opacity:0.7;font-size:0.75rem;">${inStudy}</span>`)
+          .style("opacity", 1);
+      })
+      .on("mousemove", function (event) {
+        const rect = svg.node().getBoundingClientRect();
+        tooltip
+          .style("left", (event.clientX - rect.left + 14) + "px")
+          .style("top", (event.clientY - rect.top - 10) + "px");
+      })
+      .on("mouseout", function (event, d) {
+        d3.select(this)
+          .attr("fill", studyCountries[+d.id] ? "#b8e6b0" : "#e8e8e8");
+        tooltip.style("opacity", 0);
+      });
+  });
+</script>
+
+</body>
+</html>
