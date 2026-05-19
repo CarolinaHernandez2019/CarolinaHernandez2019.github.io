@@ -97,6 +97,14 @@ const traducciones = {
         es: "Proyectos recientes",
         en: "Recent projects"
     },
+    "section-proyectos-anteriores": {
+        es: "Proyectos anteriores",
+        en: "Previous projects"
+    },
+    "hero-intro-previous-projects": {
+        es: "Trabajo seleccionado de roles anteriores, donde lideré análisis de datos y evaluación de políticas en educación y mercado laboral para instituciones de América Latina.",
+        en: "Selected work from previous roles, where I led data analysis and evaluation of education and labor policies for institutions across Latin America."
+    },
     "section-publicaciones": {
         es: "Publicaciones seleccionadas",
         en: "Selected publications"
@@ -112,10 +120,6 @@ const traducciones = {
     "tag-personal": {
         es: "Personal",
         en: "Personal"
-    },
-    "tag-course": {
-        es: "Curso",
-        en: "Course"
     },
     "pub-list-title": {
         es: "Lista",
@@ -281,6 +285,22 @@ const traducciones = {
         es: "Disponible en español",
         en: "Available in Spanish"
     },
+    "project-gestor-title": {
+        es: "Gestor de conocimiento para SDIS",
+        en: "Knowledge management system for SDIS"
+    },
+    "project-gestor-desc": {
+        es: "Sistema para organizar, documentar y visualizar el trabajo de gestores de conocimiento de la Secretaría de Integración Social. Integra datos del SIRBE con la información de los equipos operativos en las localidades de Bogotá y produce tableros interactivos en HTML por localidad y eje temático.",
+        en: "System to organize, document and visualize the work of knowledge managers at the Secretariat of Social Integration. Integrates SIRBE data with information from the operational teams across Bogota and produces interactive HTML dashboards by locality and thematic axis."
+    },
+    "project-gestor-link-code": {
+        es: "Código",
+        en: "Code"
+    },
+    "tag-knowledge": {
+        es: "Gestión del conocimiento",
+        en: "Knowledge management"
+    },
     "project1-title": {
         es: "Tablero de priorización para programas de juventud en Bogotá",
         en: "Prioritization dashboard for youth programs in Bogota"
@@ -329,20 +349,16 @@ const traducciones = {
         es: "Código",
         en: "Code"
     },
-    "project3-title": {
-        es: "Mapa interactivo de escuelas de Bogotá",
-        en: "Interactive map of schools in Bogota"
+    "project-tutorias-title": {
+        es: "Evaluación de impacto de tutoría remota en América Latina",
+        en: "Remote tutoring impact evaluation in Latin America"
     },
-    "project3-desc": {
-        es: "Proyecto personal explorando visualización geoespacial de las más de 3.300 escuelas de Bogotá.",
-        en: "Personal project exploring geospatial visualization of Bogota's 3,300+ schools."
+    "project-tutorias-desc": {
+        es: "Análisis de un ensayo controlado aleatorizado (RCT) que evaluó programas de tutoría remota en siete países de América Latina — El Salvador, México, Argentina, Guatemala, Brasil, Paraguay y Perú. Se estimaron efectos Intención de Tratar (ITT) y Tratamiento sobre Tratados (ToT), impactos heterogéneos por características de los estudiantes y resultados por país. Realizado en el Banco Interamericano de Desarrollo (BID).",
+        en: "Analysis of a randomized controlled trial (RCT) evaluating remote tutoring programs across seven Latin American countries — El Salvador, Mexico, Argentina, Guatemala, Brazil, Paraguay and Peru. Estimated Intent-to-Treat and Treatment-on-Treated effects, heterogeneous impacts by student characteristics and country-specific results. Conducted at the Inter-American Development Bank (IDB)."
     },
-    "project3-link-app": {
-        es: "Ver app",
-        en: "View app"
-    },
-    "project3-link-code": {
-        es: "Código",
-        en: "Code"
+    "project-tutorias-citation": {
+        es: "Publicado como Zoido et al. (2023). <em>Multiplicando el Aprendizaje: Tutoría Remota para Mejorar la Escolarización</em>. BID. DOI: 10.18235/0005309",
+        en: "Published as Zoido et al. (2023). <em>Multiplicando el Aprendizaje: Tutoría Remota para Mejorar la Escolarización</em>. IDB. DOI: 10.18235/0005309"
     }
 };

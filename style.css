@@ -623,6 +623,15 @@ body {
     margin-bottom: 14px;
 }
 
+.project-content p.project-citation {
+    font-size: 0.78rem;
+    color: #999999;
+    font-style: italic;
+    padding-left: 12px;
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 14px;
+}
+
 /* Tags dentro de cada tarjeta de proyecto */
 .project-tags {
     display: flex;
