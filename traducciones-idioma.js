@@ -109,6 +109,14 @@ const traducciones = {
         es: "Publicaciones seleccionadas",
         en: "Selected publications"
     },
+    "tableros-sdis-title": {
+        es: "Tableros de información para la Subdirección para la Juventud",
+        en: "Information dashboards for the Youth Subdirectorate"
+    },
+    "tableros-sdis-intro": {
+        es: "Diseño tableros de información para la Subdirección para la Juventud de la Secretaría Distrital de Integración Social. Cada uno responde a una pregunta distinta: dónde priorizar, cómo hablan los medios de la juventud y cómo avanza la política pública de juventud.",
+        en: "I design information dashboards for the Youth Subdirectorate of the District Secretariat of Social Integration. Each one answers a different question: where to prioritize, how the media talks about youth, and how the youth public policy is progressing."
+    },
     "tag-youth": {
         es: "Juventud",
         en: "Youth"
@@ -314,8 +322,8 @@ const traducciones = {
         en: "Developed to support social program allocation at the District Secretariat of Social Integration. Identifies localities with the highest concentration of vulnerable youth based on SISBEN 2024 data and compares needs across territories."
     },
     "project1-link-app": {
-        es: "Ver app",
-        en: "View app"
+        es: "Ver tablero",
+        en: "View dashboard"
     },
     "project1-link-code": {
         es: "Código",
@@ -330,12 +338,52 @@ const traducciones = {
         en: "Tool for tracking how youth is covered in Colombian media. Automates daily news collection, categorizes mentions by topic, and generates visualizations to identify trends in media coverage."
     },
     "project2-link-app": {
-        es: "Ver app",
-        en: "View app"
+        es: "Ver tablero",
+        en: "View dashboard"
     },
     "project2-link-code": {
         es: "Código",
         en: "Code"
+    },
+    "project-tablero-ppdj-title": {
+        es: "Tablero de productos y resultados de la política pública de juventud",
+        en: "Products and outcomes dashboard for the youth public policy"
+    },
+    "project-tablero-ppdj-desc": {
+        es: "Seguimiento del plan de acción de la Política Pública Distrital de Juventud: avance de sus productos y resultados según el CONPES D.C. 08.",
+        en: "Tracks the action plan of Bogota's District Youth Public Policy: progress on its products and outcomes as defined in CONPES D.C. 08."
+    },
+    "project-tablero-ppdj-link-app": {
+        es: "Ver tablero",
+        en: "View dashboard"
+    },
+    "project-tablero-ppdj-link-code": {
+        es: "Código",
+        en: "Code"
+    },
+    "tag-politica-publica": {
+        es: "Política pública",
+        en: "Public policy"
+    },
+    "project-tablero-cij-title": {
+        es: "Tablero de indicadores por dimensiones de la política de juventud",
+        en: "Indicators dashboard by youth policy dimensions"
+    },
+    "project-tablero-cij-desc": {
+        es: "Indicadores del Centro de Información de Juventud organizados según las dimensiones de la política pública, para consultar la situación de la juventud en Bogotá.",
+        en: "Indicators from the Youth Information Center organized by the public policy dimensions, to explore the situation of youth in Bogota."
+    },
+    "project-tablero-cij-link-app": {
+        es: "Ver tablero",
+        en: "View dashboard"
+    },
+    "project-tablero-cij-link-code": {
+        es: "Código",
+        en: "Code"
+    },
+    "tag-indicadores": {
+        es: "Indicadores",
+        en: "Indicators"
     },
     "project-d3-course-title": {
         es: "Notebook del curso D3 y React",
