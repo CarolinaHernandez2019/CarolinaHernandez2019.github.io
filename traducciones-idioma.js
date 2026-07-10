@@ -117,6 +117,18 @@ const traducciones = {
         es: "Diseño tableros de información para la Subdirección para la Juventud de la Secretaría Distrital de Integración Social. Cada uno responde a una pregunta distinta: dónde priorizar, cómo hablan los medios de la juventud y cómo avanza la política pública de juventud.",
         en: "I design information dashboards for the Youth Subdirectorate of the District Secretariat of Social Integration. Each one answers a different question: where to prioritize, how the media talks about youth, and how the youth public policy is progressing."
     },
+    "tableros-sdis-link": {
+        es: "Ver los tableros",
+        en: "View dashboards"
+    },
+    "tableros-volver": {
+        es: "Volver a proyectos",
+        en: "Back to projects"
+    },
+    "page-title-tableros": {
+        es: "Tableros de juventud | Carolina Hernández Cardozo",
+        en: "Youth dashboards | Carolina Hernández Cardozo"
+    },
     "tag-youth": {
         es: "Juventud",
         en: "Youth"
